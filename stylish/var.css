@@ -1,0 +1,18 @@
+:root {
+    --color50: var(--teal50);
+    --color100: var(--teal100);
+    --color200: var(--teal200);
+    --color300: var(--teal300);
+    --color400: var(--teal400);
+    --color500: var(--teal500);
+    --color600: var(--teal600);
+    --color700: var(--teal700);
+    --color800: var(--teal800);
+    --color900: var(--teal900);
+    --colorA100: var(--tealA100);
+    --colorA200: var(--tealA200);
+    --colorA400: var(--tealA400);
+    --colorA700: var(--tealA700);
+
+    --color-accent: var(--color500);
+}
