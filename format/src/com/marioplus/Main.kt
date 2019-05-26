@@ -29,8 +29,14 @@ fun main(args: Array<String>) {
 
 //    println(arrayListOf(".subforum_left_title_left_up a").mdTypoA("var(--color500)"))
 
-//    "#post_reply".toStringList().mdRoundButton("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA8klEQVRIS7WV4RGCMAxGv28DV3ADHYEJdASZQDcQJ3AE2UBH0A0cwU3ixROuQmtKW/jDcYH30jSkxMwXS/BFZAVgA+BB8u4yswUisgNwcaAtybp7nkOg7F6SLPhmvgdQAdgOVqGSSsuVJBiU5RmQnEg2kwWemmu2PsmS5GuSIADv9tOVgGSrgWiBAe8lJNeT2zQSrty6yzy6TXPgZoly4X8FJeBBQSm4V1ASPhKUhv8I5oD3AhHRYXWNOBtGfW598/mTRaQBcDRengx3V2AJkuCxgmS4KzgAOHtKlAV3BQsAerbq3Z2MN2sTrXj0uLZAofgb6fh0GTyDC1kAAAAASUVORK5CYII=").print()
+//    "#post_reply".toArray().mdRoundButton("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA8klEQVRIS7WV4RGCMAxGv28DV3ADHYEJdASZQDcQJ3AE2UBH0A0cwU3ixROuQmtKW/jDcYH30jSkxMwXS/BFZAVgA+BB8u4yswUisgNwcaAtybp7nkOg7F6SLPhmvgdQAdgOVqGSSsuVJBiU5RmQnEg2kwWemmu2PsmS5GuSIADv9tOVgGSrgWiBAe8lJNeT2zQSrty6yzy6TXPgZoly4X8FJeBBQSm4V1ASPhKUhv8I5oD3AhHRYXWNOBtGfW598/mTRaQBcDRengx3V2AJkuCxgmS4KzgAOHtKlAV3BQsAerbq3Z2MN2sTrXj0uLZAofgb6fh0GTyDC1kAAAAASUVORK5CYII=").print()
 
-    ".subforum_left_title_left_down a".toStringList().mdTypoA().print()
+//    ".subforum_left_title_left_down a".toArray().mdTypoA().print()
+
+//    ".pob.cl > em > a".toArray().mdShadow(12).print()
+//    ".subforum_left_title_right_up a".toArray().mdMsBtn().print()
+
+    "#waterfall > li:hover".toArray().mdShadow(10).print()
 }
+
 
