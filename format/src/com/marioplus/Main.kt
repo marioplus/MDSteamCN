@@ -36,7 +36,8 @@ fun main(args: Array<String>) {
 //    ".pob.cl > em > a".toArray().mdShadow(12).print()
 //    ".subforum_left_title_right_up a".toArray().mdMsBtn().print()
 
-    "#waterfall > li:hover".toArray().mdShadow(10).print()
+//    "#waterfall > li:hover".toArray().mdShadow(10).print()
+    ".subforum_left_title_left_down a".toArray().mdTypoA().print()
 }
 
 
