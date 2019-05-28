@@ -583,8 +583,8 @@
         min-width: 1200px;
         height: unset !important;
         margin: 0;
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     .subject_row_detail_text_down {
@@ -602,6 +602,10 @@
     }
 
     #wp > div:nth-child(odd) {
+        background: #f7f7f7;
+    }
+
+    #wp > div:nth-child(2) {
         background: #f7f7f7;
     }
 
@@ -669,13 +673,16 @@
 
     /* region hover 浮动效果*/
     #frameCX66dD {
-        -webkit-box-shadow: 0 5px 5px -3px rgba(0, 0, 0, .2), 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12);
-        box-shadow: 0 5px 5px -3px rgba(0, 0, 0, .2), 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12);
+        -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+        box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+
+        transition: all .2s ease-in-out;
     }
 
     .index_navi_left,
     .index_navigation_mid.bliz_ai_h,
     .index_navi_right,
+        /*#frameCX66dD,*/
     .subject_row_detail,
     .subject_row_detail2,
     .index_middle_subject.clearfix > div,
@@ -690,6 +697,7 @@
     .index_navi_left:focus,
     .index_navigation_mid.bliz_ai_h:focus,
     .index_navi_right:focus,
+    #frameCX66dD:focus,
     .subject_row_detail:focus,
     .subject_row_detail2:focus,
     .index_middle_subject.clearfix > div:focus,
@@ -697,6 +705,7 @@
     .index_navi_left:hover,
     .index_navigation_mid.bliz_ai_h:hover,
     .index_navi_right:hover,
+    #frameCX66dD:hover,
     .subject_row_detail:hover,
     .subject_row_detail2:hover,
     .index_middle_subject.clearfix > div:hover,
@@ -1217,11 +1226,11 @@
     }
 
     ul.tb.cl > li:hover {
-        background: #6876c5;
+        background: var(--color700);
     }
 
     ul.tb.cl > li a {
-        color: #9ca6d9;
+        color: var(--color300);
     }
 
     .frame-tab .tb li.a a {
@@ -1485,7 +1494,6 @@
     }
 
     /* endregion 9 */
-
 }
 
 /*帖子内容*/
