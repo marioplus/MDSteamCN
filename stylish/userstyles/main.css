@@ -563,6 +563,22 @@
 
 /*首页*/
 @-moz-document url("https://steamcn.com/"), url("https://steamcn.com/forum.php") {
+
+    /* region 主题色的背景条*/
+    body:before {
+        content: '';
+        display: inline-block;
+        width: 100%;
+        min-width: 1200px;
+        height: 500px;
+        background: var(--color500);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    /* endregion*/
+
     /* region 整体 */
     .wp,
     #wp {
@@ -768,7 +784,7 @@
         width: 100%;
         height: 2px;
         content: ' ';
-        background-color: black;
+        background-color: var(--white1);
         -webkit-transition: all .2s;
         transition: all .2s;
         -webkit-transform: scaleX(0);
@@ -1195,6 +1211,13 @@
         font-size: 14px;
     }
 
+    .index_navi {
+        padding-top: 50px;
+    }
+    .index_navi a {
+        color: var(--white1);
+    }
+
     /* tab */
     #tabPAhn0P_content,
     #tabPAhn0P_content * {
@@ -1456,7 +1479,6 @@
     }
 
     /* endregion 7 */
-
     /* region 8.人数 */
     .bbs_daily_stats {
         margin-top: unset;
@@ -2444,7 +2466,7 @@
 }
 
 /*板块*/
-@-moz-document regexp(".+steamcn.com/f\d{3}.+"), regexp(".+steamcn.com.+forumdisplay.+fid=\d+.+") {
+@-moz-document regexp(".+steamcn.com/f\\d{3}.+"), regexp(".+steamcn.com.+forumdisplay.+fid=\\d+.+") {
     /* region 隐藏顶部的关注重点、站定公告、小广告*/
     .floatcontainer.doc_header.wp.cl {
         display: none;
@@ -3022,4 +3044,542 @@
 
     /* endregion*/
 
+}
+
+/*导读 - 主体*/
+@-moz-document url-prefix("https://steamcn.com/forum.php?mod=guide") {
+    #ct > .mn > * {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    /* region 主题色的背景条*/
+    body:before {
+        content: '';
+        display: inline-block;
+        width: 100%;
+        min-width: 1200px;
+        height: 500px;
+        background: var(--color500);
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+    }
+
+    /* endregion*/
+    /* region 隐藏顶部关注重点、广告、站点公告*/
+    .floatcontainer.doc_header.wp.cl > .index_navi {
+        display: none;
+    }
+
+    /* endregion*/
+    /* region 调整简繁体切换的位置*/
+    .floatcontainer.doc_header.wp.cl {
+        padding-top: 40px;
+    }
+
+    /* endregion*/
+    /* region 面包屑导航栏*/
+    #pt .z a.nvhm {
+        background: unset;
+        text-indent: 0;
+    }
+
+    .nvhm {
+        width: unset;
+        line-height: unset;
+    }
+
+    /* region 下划线*/
+    #pt .z a {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        text-decoration: none;
+        vertical-align: top;
+        outline: 0;
+    }
+
+    #pt .z a:focus:before,
+    #pt .z a:hover:before {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+
+
+    #pt .z a:before {
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        content: ' ';
+        background-color: var(--white1);
+        -webkit-transition: all .2s;
+        transition: all .2s;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    #pt .z a[class]:before {
+        width: 100px;
+    }
+    /* endregion*/
+
+    /* SteamCN蒸汽动力*/
+    #pt .z a,
+    #pt .z em,
+    #pt .z span {
+        color: var(--white1);
+        float: unset;
+        height: unset;
+    }
+
+    #pt .z a.nvhm {
+        height: unset;
+        line-height: unset;
+        width: unset;
+        position: unset;
+        top: unset;
+        left: unset;
+    }
+
+    #pt {
+        height: unset;
+        line-height: unset;
+        padding: unset;
+        margin: 0 auto;
+        border: none;
+    }
+
+    #pt .z,
+    #pt .y {
+        margin: 0;
+    }
+
+    .z {
+        float: unset;
+    }
+
+    /*> guide*/
+    #pt .z em {
+        width: unset;
+        line-height: unset;
+        background: unset;
+    }
+
+    /* region 位置*/
+    #pt > .z {
+        width: 1000px;
+        position: relative;
+        top: 180px;
+        left: calc((1206px - 1000px) / 2);
+    }
+
+    /* endregion*/
+    /* endregion*/
+    /* region 标题*/
+    .mn .bm_h.cl {
+        text-align: center;
+    }
+
+    .bm_h {
+        height: unset;
+        line-height: unset;
+        padding: unset;
+        overflow: unset;
+    }
+
+    .mn .bm_h.cl > h1 {
+        font-weight: bold;
+        font-size: 40px;
+        display: inline-block;
+    }
+
+    .bm_h,
+    .bml .bm_h,
+    .fl .bm_h {
+        height: unset;
+        background: unset;
+    }
+
+    .bm_h h3,
+    .bm_h h2,
+    .bm_h h1 {
+        height: unset;
+        line-height: unset;
+        padding: unset;
+    }
+
+    .bm.bml.pbn > .bm_c.cl.pbn {
+        display: none;
+    }
+
+    .mn > .bm.bml.pbn {
+        margin-bottom: unset;
+        padding-bottom: unset !important;
+    }
+
+    .bml .bm_c {
+        padding: unset;
+    }
+
+    .mn .bm {
+        background: unset;
+    }
+
+    /* region 位置*/
+    .mn .bm_h.cl {
+        /*background: unset;*/
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    /* endregion*/
+    /* endregion*/
+    /* region 隐藏顶部分页*/
+    #pgt > .pg {
+        display: none;
+    }
+
+    /* endregion*/
+    /* region 发帖按钮*/
+    #pgt.cl > a > img {
+        width: 0;
+        height: 0;
+        text-decoration: none;
+    }
+
+    #pgt.cl > a {
+        background: var(--color500);
+        display: inline-block;
+        text-decoration: none;
+        padding: 6px 8px;
+        border-radius: 2px;
+
+        -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12) !important;
+        box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12) !important;
+        transition: all .2s ease-in-out;
+    }
+
+    #pgt.cl > a:hover {
+        opacity: .87;
+        -webkit-box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12) !important;
+        box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12) !important;
+    }
+
+    #pgt.cl > a:active {
+        -webkit-box-shadow: 0 5px 5px -3px rgba(0, 0, 0, .2), 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12) !important;
+        box-shadow: 0 5px 5px -3px rgba(0, 0, 0, .2), 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12) !important;
+    }
+
+    #pgt.cl > a:after {
+        content: '发帖';
+        text-decoration: none;
+        color: var(--white1);
+    }
+
+    #pgt.cl > a:before {
+        content: '';
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        position: relative;
+        top: 3px;
+        margin-right: 5px;
+        background: center no-repeat;
+        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAqElEQVQ4T6WTURHCMBAF9ykAJ+AAnGChOKAOwAEOwEGxUCc4OCYzCVPSpunRfOVn9+7e3ImVTyt5FgvMbA88gKekcyrsEbyAQwRvkprwrwpi5RPQAkGyA3pJoaN5QYQ7YAvcgdD6FWgkvWcFGZxGbiVdhsFPjlCAe+CYKhdD9MCjEbzwj+AfOBeEVDeDgCZnzjf3G6KZmRfOO0iCRZXdq1w6uuoq1671A+k8RhGj/8IEAAAAAElFTkSuQmCC");
+    }
+
+    /* region 位置*/
+    #pgt.cl {
+        text-align: right;
+    }
+
+    #pgt.cl > a {
+        position: relative;
+        top: 62px;
+        left: -70px;
+    }
+
+    /* endregion*/
+    /* endregion*/
+    /* region 订阅按钮*/
+    a.fa_rss {
+        display: inline-block;
+        text-decoration: none;
+        padding: 6px 8px;
+        border-radius: 2px;
+        background: var(--color500);
+        -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+        box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+        transition: all .2s ease-in-out;
+    }
+
+    a.fa_rss:hover {
+        -webkit-box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
+        box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
+    }
+
+    a.fa_rss:active {
+        -webkit-box-shadow: 0 5px 5px -3px rgba(0, 0, 0, .2), 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12);
+        box-shadow: 0 5px 5px -3px rgba(0, 0, 0, .2), 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12);
+    }
+
+    a.fa_rss:before {
+        content: '';
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        position: relative;
+        top: 3px;
+        margin-right: 5px;
+        background: center no-repeat;
+        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABIElEQVQ4T6WSa1FDMRSEv1VAHdA6oApaHOAAqgAktAooCsABSKgDQAFIwMEye0nuZEIfzJBf7ZyT7+4j4p9H9b7tO+Cs/N8B75K+TvFbQC7lXDSgF+BBUp394o2AdmJ7AiyBqFoAAa32KdoL6GABbYFz4FLSWzs/CchyURQbgcwlfVbIALB9BdwDGeQL8T0udRBLmveAKXADxHtgaWMradPZyd5HyeMps0MhrkuAz5JWHSQXF5JmBwFFchQ9AhtJAQ7Hdmp+BWaxeTRE27l4W5bHR2Xb1Ub7kOJv0tZU0k+Ya0mpsqpII7soqy3UcLKQmsaubf+EJcXSUUAuJf0ekNd43VZnO3YGVb2FfKnvP+qWkgYlJchp3fvTS2xr7H9/Ax8DhRF5gVR5AAAAAElFTkSuQmCC");
+    }
+
+    /* region 位置*/
+    a.fa_rss {
+        position: relative;
+        top: calc(101px + 62px);
+        right: 0;
+    }
+
+    /* endregion*/
+    /* endregion*/
+    /* region 分类*/
+    #thread_types {
+        --borderRadius: 3px;
+    }
+
+    .ttp > li > a {
+        color: var(--white1);
+    }
+
+    .ttp > li {
+        padding-bottom: unset;
+    }
+
+    .ttp > li:not([class]) > a:hover {
+        color: var(--white1);
+        background: rgba(0, 0, 0, .12);
+    }
+
+    .ttp > li[class] > a,
+    .ttp > li:not([class]) > a:active {
+        color: var(--white1);
+        background: var(--color500);
+        -webkit-box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
+        box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
+    }
+
+    .ttp a {
+        background: unset;
+        margin-right: unset;
+        height: unset;
+        padding: 6px 8px;
+        border: unset;
+        transition: all .2s ease-in-out;
+    }
+
+    .ttp > li:not(:last-child) > a {
+    }
+
+    .ttp > li:first-child > a {
+        border-radius: var(--borderRadius) 0 0 var(--borderRadius);
+    }
+
+    .ttp > li:last-child > a {
+        border-radius: 0 var(--borderRadius) var(--borderRadius);
+    }
+
+    /* region 位置*/
+    #thread_types {
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* endregion*/
+    /* endregion*/
+    /* region 帖子列表*/
+    /* region 圆角*/
+    #threadlist {
+        --borderWidth: 10px;
+
+        border-radius: var(--borderWidth);
+    }
+
+    #threadlist > .th {
+        border-radius: var(--borderWidth) var(--borderWidth) 0 0;
+    }
+
+    #threadlist > .bm_c {
+        border-radius: 0 0 var(--borderWidth) var(--borderWidth);
+    }
+
+    /* endregion*/
+    /* region 阴影*/
+    #threadlist {
+        -webkit-box-shadow: 0 6px 6px -3px rgba(0, 0, 0, .2), 0 10px 14px 1px rgba(0, 0, 0, .14), 0 4px 18px 3px rgba(0, 0, 0, .12);
+        box-shadow: 0 6px 6px -3px rgba(0, 0, 0, .2), 0 10px 14px 1px rgba(0, 0, 0, .14), 0 4px 18px 3px rgba(0, 0, 0, .12);
+    }
+
+    /* endregion*/
+    /* region 间距*/
+    .tl td,
+    .tl th {
+        padding: 10px !important;
+    }
+
+    .tl .icn {
+        text-align: right;
+    }
+
+    .tl th,
+    .tl td {
+        transition: all .2s ease-in-out;
+        border-bottom: 1px solid rgba(0, 0, 0, .12);
+    }
+
+    /* endregion*/
+    /* endregion*/
+    /* region 页码*/
+    .pgb.y {
+        display: none;
+    }
+
+    .pgs.mtm.mbm.cl {
+        margin: -10px 0 0 0 !important;
+        padding: unset !important;
+    }
+
+    .pg a,
+    .pg strong,
+    .pgb a,
+    .pg label {
+        background-color: transparent;
+    }
+
+    .pg strong {
+        color: var(--white1);
+        background-color: var(--color500);
+    }
+
+    .pg a {
+        color: var(--color500);
+        transition: all .2s ease-in-out;
+    }
+
+    .pg a:hover {
+        background-color: rgba(0, 0, 0, .1);
+    }
+
+    .pg a:active {
+        color: var(--white1);
+        background-color: var(--color500);
+    }
+
+    .pg label {
+        display: none;
+    }
+
+    /* region 上一页按钮*/
+    .pg a.prev {
+        width: 32px;
+        height: 32px;
+        padding: 0;
+        background-image: unset !important;
+        background-color: transparent;
+    }
+
+    .pg a.prev:hover {
+        background: rgba(0, 0, 0, .1);
+    }
+
+    .pg a.prev:active {
+        background: var(--color500);
+    }
+
+    .pg a.prev:after {
+        display: inline-block;
+        content: '';
+        position: relative;
+        top: 3px;
+        left: 7px;
+        border: 4px solid;
+        border-color: transparent var(--color500) var(--color500) transparent;
+        transform: rotate(135deg);
+    }
+
+    .pg a.prev:active:after {
+        border-color: transparent var(--white1) var(--white1) transparent;
+    }
+
+    /* endregion*/
+    /* region 下一页按钮*/
+    .pg a.nxt {
+        width: 0;
+        height: 32px;
+        padding: 0 0 0 32px;
+        position: relative;
+        font-size: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        background: unset;
+    }
+
+    .pg a.nxt:hover {
+        background: rgba(0, 0, 0, .1);
+    }
+
+    .pg a.nxt:active {
+        background: var(--color500);
+    }
+
+    .pg a.nxt:after {
+        display: inline-block;
+        content: '';
+        position: relative;
+        top: 7px;
+        left: -22px;
+        border: 4px solid;
+        border-color: transparent var(--color500) var(--color500) transparent;
+        transform: rotate(-45deg);
+    }
+
+    .pg a.nxt:active:after {
+        border-color: transparent var(--white1) var(--white1) transparent;
+    }
+
+    /* endregion*/
+    /* region 位置*/
+    .bm.bw0.pgs.cl > .pg {
+        position: relative;
+        top: -40px;
+    }
+}
+
+/*导读 - 可以翻页*/
+@-moz-document regexp(".+steamcn.com.+mod=guide&view=(new|hot|my).*") {
+    #threadlist > .bm_c {
+        padding: 0 0 50px 0;
+    }
+}
+
+/*导读 - 不可翻页*/
+@-moz-document regexp(".+steamcn.com.+mod=guide&view=(digest|sofa)") {
+    #threadlist > .bm_c {
+        margin-bottom: 50px;
+    }
+}
+
+/*导读 - 我的帖子*/
+@-moz-document url("https://steamcn.com/forum.php?mod=guide&view=my") {
+    #pgt.cl > a {
+        left: unset !important;
+    }
 }

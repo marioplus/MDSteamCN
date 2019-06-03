@@ -38,7 +38,13 @@ fun main(args: Array<String>) {
 
 //    "#waterfall > li:hover".toArray().mdShadow(10).print()
 //    ".subforum_left_title_left_down a".toArray().mdTypoA().print()
-    "#frameCX66dD".toArray().mdShadow(2).print()
+//    "#ct".toArray().mdShadow(2).print()
+//    "a.fa_rss".toArray().mdBtnRaised().print()
+//    "#threadlist".toArray().mdShadow(2).print()
+
+    "#pt .z a".toArray().mdTypoA().print()
 }
+
+
 
 

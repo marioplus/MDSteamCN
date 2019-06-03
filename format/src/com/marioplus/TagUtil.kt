@@ -176,12 +176,50 @@ fun List<String>.mdHoverable(): String {
 }
 
 /**
- * 按钮阴影效果
+ * 普通按钮
  */
 fun List<String>.mdBtn(color: String = "var(--color500)"): String {
     return arrayListOf(
             "${this.addPseudoClass()} {",
-            "   background: $color !important;",
+            "   background: unset;",
+            "   border-radius: 2px",
+            "   transition: all .2s ease-in-out;",
+            "}",
+
+            "${this.addPseudoClass(HOVER)} {",
+            "   background: rgba(0, 0, 0, .12);",
+            "}",
+
+            "${this.addPseudoClass(ACTIVE)} {",
+            SHADOW_WEBKIT_6,
+            SHADOW_6,
+            "}",
+
+            "${this.addPseudoClass(BEFORE)} {",
+            "   content: '';",
+            "   width: 16px;",
+            "   height: 16px;",
+            "   display: inline-block;",
+            "   position: relative;",
+            "   top: 3px;",
+            "   margin-right: 5px;",
+            "   background: center no-repeat;",
+            "   background-color: var(--color300);",
+            "}"
+    ).format()
+}
+
+/**
+ * 浮动按钮
+ */
+fun List<String>.mdBtnRaised(color: String = "var(--color500)"): String {
+    return arrayListOf(
+            "${this.addPseudoClass()} {",
+            "   display: inline-block;",
+            "   text-decoration: none;",
+            "   padding: 6px 8px;",
+            "   border-radius: 2px;",
+            "   background: $color;",
             SHADOW_WEBKIT_2,
             SHADOW_2,
             "   transition: all .2s ease-in-out;",
@@ -195,32 +233,20 @@ fun List<String>.mdBtn(color: String = "var(--color500)"): String {
             "${this.addPseudoClass(ACTIVE)} {",
             SHADOW_WEBKIT_8,
             SHADOW_8,
-            "}"
-    ).format()
-}
-
-/**
- * 小型按钮
- */
-fun List<String>.mdMsBtn(color: String = "var(--color500)"): String {
-    return arrayListOf(
-            "${this.addPseudoClass()} {",
-            "   border-radius: 2px;",
-            "   background: unset;",
-            "   transition: all .2s ease-in-out;",
             "}",
 
-            "${this.addPseudoClass(HOVER)} {",
-            "   background: rgba(0, 0, 0, .2);",
-            "}",
-
-            "${this.addPseudoClass(ACTIVE)} {",
-            "   background: var(--color500);",
-            SHADOW_WEBKIT_4,
-            SHADOW_4,
+            "${this.addPseudoClass(BEFORE)} {",
+            "   content: '';",
+            "   width: 16px;",
+            "   height: 16px;",
+            "   display: inline-block;",
+            "   position: relative;",
+            "   top: 3px;",
+            "   margin-right: 5px;",
+            "   background: center no-repeat;",
+            "   background-color: var(--color300);",
             "}"
     ).format()
-
 }
 
 /**
