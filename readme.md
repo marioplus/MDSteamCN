@@ -12,16 +12,17 @@
 
 如果大家在使用过程中有遇到问题，请积极反馈。最好提供截图、屏幕尺寸、电脑分辨率。
 
-
 ## 有什么用
 
 放几张预览图
 
-![首页](https://upload-images.jianshu.io/upload_images/11296261-2fe2ec1e917bbfd3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![首页.png](https://upload-images.jianshu.io/upload_images/11296261-07a340978ea0427f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![板块帖子列表](https://upload-images.jianshu.io/upload_images/11296261-9f1b27e93c2bebe2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![导读.png](https://upload-images.jianshu.io/upload_images/11296261-f611d36e8ca015d8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![帖子](https://upload-images.jianshu.io/upload_images/11296261-7cff9c09f5815e9b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![帖子.png](https://upload-images.jianshu.io/upload_images/11296261-5ec1fe7c6e9516f6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![板块.png](https://upload-images.jianshu.io/upload_images/11296261-4adc12637c6a75ad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 更新
 - 2019-10-16
@@ -35,23 +36,37 @@
 - 2019-10-01
     1. 更新帖子部分"引用"的样式
 
-- 2019-06-27
-    1. 重做帖子标题部分适配
-    2. 修改帖子板块域名正则匹配
-    3. 增加3张预览图
-    4. 帖子内容分类小标题变成多行
+**2019-06-03**
+1. update: 重新截图
 
-- 2019-06-26：
-    1. 首页、板块帖子列表、帖子详情
+**2019-05-30**
+1. add: 适配导读界面（最新热门、最新精华、最新回复、最新发表、抢沙发、我的帖子）
+2. fix: 板块页面，网址正则匹配错误
+3. update: 首页做了点调整
+
+**2019-05-28**
+1. update: 重新做首页的样式，主要是距离以及颜色的调整
+2. update: 不在推荐安装stylish，改为stylus
+3. add: 增加主题色自定义设置,已经安装的可以重新安装
+
+**2019-05-27**
+1. update: 重做帖子标题部分适配
+2. update: 修改帖子板块域名正则匹配
+3. add: 增加3张预览图
+4. add: 帖子内容分类小标题变成多行
+
+**2019-05-26**
+1. add: 首页、板块帖子列表、帖子详情
     
 ## 安装
 
-1. 安装Stylish插件
-    - [chrome](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe)
-    - [firefox](https://addons.mozilla.org/en-US/firefox/addon/stylish/)
-    - [opera](https://addons.opera.com/en-gb/extensions/details/stylish/)
-2. 安装我的[MDSteamCN](https://userstyles.org/styles/172244/mdsteamcn)样式
-    - 进入页面点**Install Style**就可以了
+### 1. 安装Stylus插件 
+- [chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?utm_source=chrome-ntp-icon)
+- [firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
+- [opera](https://addons.opera.com/en-gb/extensions/details/stylus/)
+
+### 2. 安装我的[MDSteamCN](https://userstyles.org/styles/172244/mdsteamcn)样式
+进入页面点**Install Style**就可以了
 
 ## 吐槽
 

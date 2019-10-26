@@ -37,7 +37,14 @@ fun main(args: Array<String>) {
 //    ".subforum_left_title_right_up a".toArray().mdMsBtn().print()
 
 //    "#waterfall > li:hover".toArray().mdShadow(10).print()
-    ".subforum_left_title_left_down a".toArray().mdTypoA().print()
+//    ".subforum_left_title_left_down a".toArray().mdTypoA().print()
+//    "#ct".toArray().mdShadow(2).print()
+//    "a.fa_rss".toArray().mdBtnRaised().print()
+//    "#threadlist".toArray().mdShadow(2).print()
+
+    "#pt .z a".toArray().mdTypoA().print()
 }
+
+
 
 
