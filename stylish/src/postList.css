@@ -1,3 +1,7 @@
+/*
+ * 板块（帖子列表）
+ * postList.css
+ */
 /* region 隐藏顶部的关注重点、站定公告、小广告*/
 .floatcontainer.doc_header.wp.cl {
     display: none;
@@ -67,7 +71,6 @@ body:before {
 .subforum_left_title_left_up a {
     color: var(--white1);
     font-size: 12px;
-    z-index: 1;
 }
 
 .subforum_left_title_left_up a {
@@ -107,6 +110,7 @@ body:before {
     position: relative;
     top: 120px;
     left: unset;
+    z-index: 20;
 }
 
 .subforum_left_title_left_up > div {
@@ -157,22 +161,6 @@ body:before {
 
 .subforum_left_title_left_down {
     padding-bottom: 60px;
-}
-
-#ct .bml .pbn,
-#ct .bm,
-#ct .bn,
-#ct .pbn,
-#ct .bm_c > div,
-#ct .ptn {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-}
-
-#ct .subforum {
-    padding-top: 0;
 }
 
 /* endregion*/
@@ -589,87 +577,4 @@ a#a_favorite:before {
     height: 100%;
 }
 
-/* endregion*/
-
-/* region 发表帖子按钮*/
-.ptm.pnpost {
-    margin-top: 5px;
-    position: relative;
-}
-
-#fastpostsubmit {
-    color: var(--white1) !important;
-    background: var(--color500) !important;
-}
-
-#fastpostsubmit {
-    position: relative;
-    display: inline-block;
-    min-width: 88px;
-    height: 36px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 0 16px;
-    margin: 0;
-    overflow: hidden;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 36px;
-    color: inherit;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: .04em;
-    white-space: nowrap;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
-    zoom: 1;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background: 0 0;
-    border: none;
-    border-radius: 2px !important;
-    outline: 0;
-    -webkit-transition: all .2s cubic-bezier(.4, 0, .2, 1), -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
-    transition: all .2s cubic-bezier(.4, 0, .2, 1), box-shadow .2s cubic-bezier(.4, 0, 1, 1), -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
-    -webkit-user-drag: none;
-
-    -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12) !important;
-    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12) !important;
-}
-
-#fastpostsubmit:hover {
-    background-color: rgba(0, 0, 0, .1);
-    opacity: .87;
-    -webkit-box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12) !important;
-    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12) !important;
-}
-
-#fastpostsubmit:active {
-    -webkit-box-shadow: 0 5px 5px -3px rgba(0, 0, 0, .2), 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12) !important;
-    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, .2), 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12) !important;
-}
-
-#fastpostsubmit strong {
-    position: relative;
-    padding: 0 0 0 2px !important;
-    left: 1px;
-}
-
-#fastpostsubmit strong:before {
-    content: '';
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAOCAYAAADJ7fe0AAAAcklEQVQ4T2P8//+/AgMDQz8DA4MBAwMDiE0s+MDAwHCBgYGhkPH///8HGBgY7InViUXdB5Ah/ykwAKx11BDMEBwNE4wwuYgrTBYyMDA8ICIRgtRsQDfkIAMDQwIjIyMxBsDtABmyAJrxGhgZGUH5iGQAANRaQeLhZztxAAAAAElFTkSuQmCC");
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-    top: 6px;
-    left: -6px;
-}
 /* endregion*/

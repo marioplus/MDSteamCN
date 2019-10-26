@@ -1,3 +1,7 @@
+/*
+ * 帖子内容
+ * post.css
+ */
 /* region 主题色的背景条*/
 .floatcontainer.doc_header.wp.cl {
     height: 0;
@@ -48,7 +52,7 @@ body:before {
 /* endregion*/
 
 /* region 圆角*/
-#postlist > div:nth-child(2) .pls {
+#postlist > div:nth-child(2) .pls[rowspan] {
     border-top-left-radius: var(--post-radius);
 }
 
@@ -936,6 +940,33 @@ img.authicn.vm {
     left: 0;
 }
 
+/* endregion*/
+
+/* region 引用样式*/
+.pl .quote,
+.pl .quote blockquote {
+    background: #fff;
+    padding: unset;
+}
+.pl .quote {
+    position: relative;
+}
+.pl .quote blockquote{
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px
+}
+.pl .quote blockquote {
+    font-size: 13px !important;
+    font-style: oblique;
+}
+.pl .quote:before {
+    content:' ';
+    position: absolute;
+    width: 5px;
+    height:100%;
+    background: var(--color500);
+}
 /* endregion*/
 
 /* endregion*/

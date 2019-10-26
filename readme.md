@@ -24,6 +24,16 @@
 ![帖子](https://upload-images.jianshu.io/upload_images/11296261-7cff9c09f5815e9b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 更新
+- 2019-10-16
+    1. 修复论坛更换logo带来的若干小毛病
+    2. 调整导读页的导航栏的“>”
+    3. 修复上次更新导致的颜色自定义失效
+
+- 2019-10-24
+    1. 适配论坛新域名 keylol.com
+
+- 2019-10-01
+    1. 更新帖子部分"引用"的样式
 
 - 2019-06-27
     1. 重做帖子标题部分适配

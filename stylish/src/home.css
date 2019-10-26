@@ -1,3 +1,22 @@
+/*
+ * 首页
+ * home.css
+ */
+/* region 主题色的背景条*/
+body:before {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    min-width: 1200px;
+    height: 500px;
+    background: var(--color500);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* endregion*/
+
 /* region 整体 */
 .wp,
 #wp {
@@ -18,8 +37,12 @@
     min-width: 1200px;
     height: unset !important;
     margin: 0;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.subject_row_detail_text_down {
+    color: #333333 !important;
 }
 
 /* 背景色 */
@@ -28,33 +51,45 @@
     margin: 0 auto;
 }
 
+#wp > div:nth-child(even) {
+    background: #f0f0f0;
+}
+
+#wp > div:nth-child(odd) {
+    background: #f7f7f7;
+}
+
 #wp > div:nth-child(2) {
-    background: #3f51b5;
+    background: #f7f7f7;
 }
 
-#wp > div:nth-child(3) {
-    background: #b3e0e1;
-}
+/*#wp > div:nth-child(2) {*/
+/*    background: #3f51b5;*/
+/*}*/
 
-#wp > div:nth-child(4) {
-    background: #3f51b5;
-}
+/*#wp > div:nth-child(3) {*/
+/*    background: #b3e0e1;*/
+/*}*/
 
-#wp > div:nth-child(5) {
-    background: #fafafa;
-}
+/*#wp > div:nth-child(4) {*/
+/*    background: #3f51b5;*/
+/*}*/
 
-#wp > div:nth-child(6) {
-    background: #e91e63;
-}
+/*#wp > div:nth-child(5) {*/
+/*    background: #fafafa;*/
+/*}*/
 
-#wp > div:nth-child(7) {
-    background: #F7f7f7;
-}
+/*#wp > div:nth-child(6) {*/
+/*    background: #e91e63;*/
+/*}*/
 
-#wp > div:nth-child(8) {
-    background: #607d8b;
-}
+/*#wp > div:nth-child(7) {*/
+/*    background: #F7f7f7;*/
+/*}*/
+
+/*#wp > div:nth-child(8) {*/
+/*    background: #607d8b;*/
+/*}*/
 
 /* 分区标题 */
 .index_subject_title div,
@@ -91,10 +126,17 @@
 /* endregion 整体 */
 
 /* region hover 浮动效果*/
+#frameCX66dD {
+    -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+
+    transition: all .2s ease-in-out;
+}
+
 .index_navi_left,
 .index_navigation_mid.bliz_ai_h,
 .index_navi_right,
-#frameCX66dD,
+    /*#frameCX66dD,*/
 .subject_row_detail,
 .subject_row_detail2,
 .index_middle_subject.clearfix > div,
@@ -180,7 +222,7 @@
     width: 100%;
     height: 2px;
     content: ' ';
-    background-color: black;
+    background-color: var(--white1);
     -webkit-transition: all .2s;
     transition: all .2s;
     -webkit-transform: scaleX(0);
@@ -214,7 +256,7 @@
     width: 100%;
     height: 2px;
     content: ' ';
-    background-color: #03A9F4;
+    background-color: var(--color500);
     -webkit-transition: all .2s;
     transition: all .2s;
     -webkit-transform: scaleX(0);
@@ -554,8 +596,8 @@
 
 /* region 0.关注重点 & 小广告 & 站点公告*/
 .floatcontainer.doc_header.wp.cl {
-    background: var(--color500);
-    padding: 100px 0;
+    /*background: var(--color500);*/
+    padding: 30px 0;
 }
 
 .index_navi_left,
@@ -607,6 +649,14 @@
     font-size: 14px;
 }
 
+.index_navi {
+    padding-top: 50px;
+}
+
+.index_navi a {
+    color: var(--white1);
+}
+
 /* tab */
 #tabPAhn0P_content,
 #tabPAhn0P_content * {
@@ -632,17 +682,17 @@
 }
 
 ul.tb.cl > li {
-    background: #3f51b5;
+    background: var(--color500);
     color: white;
     transition: all .25s cubic-bezier(.4, 0, .2, 1);
 }
 
 ul.tb.cl > li:hover {
-    background: #6876c5;
+    background: var(--color700);
 }
 
 ul.tb.cl > li a {
-    color: #9ca6d9;
+    color: var(--color300);
 }
 
 .frame-tab .tb li.a a {
@@ -660,7 +710,7 @@ ul.tb.cl > li a {
 
 
 #diy1 span.title {
-    background: #3f51b5 !important;
+    background: var(--color500) !important;
     height: 46px !important;
     line-height: 46px !important;
 }
@@ -694,6 +744,7 @@ ul.tb.cl > li a {
 }
 
 /* endregion 2.平台周边 */
+
 /* region 3.问题互助 */
 #wp > div:nth-child(4) .index_subject_title2 > div {
     color: #f06292 !important;
@@ -718,6 +769,7 @@ ul.tb.cl > li a {
 }
 
 /* endregion 3.问题互助 */
+
 /* region 4.友商平台 */
 #wp > div:nth-child(5) .index_subject_title > div {
     color: #ffc107 !important;
@@ -738,6 +790,7 @@ ul.tb.cl > li a {
 }
 
 /* endregion 4.友商平台 */
+
 /* region 5.游戏讨论 */
 #wp > div:nth-child(6) .index_subject_title > div {
     color: #3949ab !important;
@@ -762,6 +815,7 @@ ul.tb.cl > li a {
 }
 
 /* endregion 5.游戏讨论 */
+
 /* region 6.汉化 */
 /* 居中 */
 #wp > div:nth-child(7) {
@@ -827,6 +881,7 @@ ul.tb.cl > li a {
 
 /* endregion 起源汉化组 */
 /* endregion 6 */
+
 /* region 7.休闲、社区 */
 #wp > div:nth-child(8) {
     width: calc(100% - (100% - 1200px) / 2);
@@ -881,6 +936,7 @@ ul.tb.cl > li a {
 }
 
 /* endregion 8 */
+
 /* region 9.页脚 */
 .subforunm_foot_banner {
     padding-top: 30px;
