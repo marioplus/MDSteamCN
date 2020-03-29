@@ -722,6 +722,15 @@ ul.tb.cl > li a {
     right: -107px;
 }
 
+/*tab 主题名字过长导致超出 tab外框*/
+.module.cl.xl.xl1 ol li a[title] {
+    max-width:380px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
 /* endregion 1.轮播图和tab */
 
 /* region 2.平台周边 */

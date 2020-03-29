@@ -68,13 +68,13 @@ body:before {
     box-shadow: 0 6px 6px -3px rgba(0, 0, 0, .2), 0 10px 14px 1px rgba(0, 0, 0, .14), 0 4px 18px 3px rgba(0, 0, 0, .12);
 
     position: relative;
-    padding-bottom: 320px;
+    padding-bottom: 450px;
 }
 
 .pgs .pg, #f_pst form {
     z-index: 1;
     position: relative;
-    top: -320px;
+    top: -450px;
 }
 
 .pg, #f_pst {
@@ -323,6 +323,11 @@ body:before {
     position: relative;
     top: 6px;
     left: -6px;
+}
+
+/* 快速回帖表情 */
+div#fastsmilies > table tr > td {
+    padding: 5px 0;
 }
 
 /* endregion*/
@@ -948,25 +953,30 @@ img.authicn.vm {
     background: #fff;
     padding: unset;
 }
+
 .pl .quote {
     position: relative;
 }
-.pl .quote blockquote{
+
+.pl .quote blockquote {
     padding-left: 20px;
     padding-top: 15px;
     padding-bottom: 15px
 }
+
 .pl .quote blockquote {
     font-size: 13px !important;
     font-style: oblique;
 }
+
 .pl .quote:before {
-    content:' ';
+    content: ' ';
     position: absolute;
     width: 5px;
-    height:100%;
+    height: 100%;
     background: var(--color500);
 }
+
 /* endregion*/
 
 /* endregion*/
