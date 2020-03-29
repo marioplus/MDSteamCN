@@ -16,15 +16,20 @@
 
 放几张预览图
 
-![首页.png](https://upload-images.jianshu.io/upload_images/11296261-07a340978ea0427f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![首页.png](https://i.loli.net/2020/03/29/3YdxqOJXeCWMP8b.png)
 
-![导读.png](https://upload-images.jianshu.io/upload_images/11296261-f611d36e8ca015d8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![导读.png](https://i.loli.net/2020/03/16/jJRZaibKuDQSnxN.png)
 
-![帖子.png](https://upload-images.jianshu.io/upload_images/11296261-5ec1fe7c6e9516f6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![帖子.png](https://i.loli.net/2020/03/16/iPRnzLFQZxCKpsa.png)
 
-![板块.png](https://upload-images.jianshu.io/upload_images/11296261-4adc12637c6a75ad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![板块.png](https://i.loli.net/2020/03/16/XgFEzblUcoPwyOx.png)
 
 ## 更新
+- 2020-03-29
+    1. 修复首页tab页标题过长让标题超出tab范围
+    2. 改善tab中的标题的鼠标悬停的效果
+    3. 加大帖子回复区域的高度
+
 - 2019-10-16
     1. 修复论坛更换logo带来的若干小毛病
     2. 调整导读页的导航栏的“>”
