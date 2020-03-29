@@ -1,0 +1,8 @@
+/*
+ * 导读的“最新精华”、“抢沙发”
+ * guide-digest-sofa.css
+ * @url https://keylol.com/forum.php?mod=guide&view=digest
+ */
+#threadlist > .bm_c {
+    margin-bottom: 50px;
+}

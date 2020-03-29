@@ -1,7 +1,4 @@
 /* 
- * @date 2020-03-29T19:12:35.328
- */
-/* 
  * md颜色
  * mdColor.css
  */
@@ -366,9 +363,6 @@
 }
 
 /* 
- * @date 2020-03-29T19:12:35.333
- */
-/* 
  * 变量配置
  * optional.txt
  */
@@ -396,9 +390,6 @@
 	}
 }
 
-/* 
- * @date 2020-03-29T19:12:35.334
- */
 /* 
  * 导航栏
  * nav.css
@@ -640,13 +631,10 @@
 }
 
 /* 
- * @date 2020-03-29T19:12:35.334
- */
-/* 
  * 首页
  * home.css
  */
-@-moz-document regexp("https?://keylol.com/(forum.php)?") {
+@-moz-document url("https://keylol.com/"), url("https://keylol.com/forum.php") {
 	/*
 	 * 首页
 	 * home.css
@@ -1371,15 +1359,6 @@
 	    right: -107px;
 	}
 	
-	/*tab 主题名字过长导致超出 tab外框*/
-	.module.cl.xl.xl1 ol li a[title] {
-	    max-width:380px;
-	    display: inline-block;
-	    overflow: hidden;
-	    text-overflow:ellipsis;
-	    white-space: nowrap;
-	}
-	
 	/* endregion 1.轮播图和tab */
 	
 	/* region 2.平台周边 */
@@ -1623,9 +1602,6 @@
 }
 
 /* 
- * @date 2020-03-29T19:12:35.335
- */
-/* 
  * 帖子内容
  * post.css
  */
@@ -1700,13 +1676,13 @@
 	    box-shadow: 0 6px 6px -3px rgba(0, 0, 0, .2), 0 10px 14px 1px rgba(0, 0, 0, .14), 0 4px 18px 3px rgba(0, 0, 0, .12);
 	
 	    position: relative;
-	    padding-bottom: 450px;
+	    padding-bottom: 418px;
 	}
 	
 	.pgs .pg, #f_pst form {
 	    z-index: 1;
 	    position: relative;
-	    top: -450px;
+	    top: -418px;
 	}
 	
 	.pg, #f_pst {
@@ -2615,9 +2591,6 @@
 }
 
 /* 
- * @date 2020-03-29T19:12:35.336
- */
-/* 
  * 板块（帖子列表）
  * postList.css
  */
@@ -3205,9 +3178,6 @@
 }
 
 /* 
- * @date 2020-03-29T19:12:35.337
- */
-/* 
  * 导读
  * guide.css
  */
@@ -3747,9 +3717,6 @@
 }
 
 /* 
- * @date 2020-03-29T19:12:35.337
- */
-/* 
  * 导读的“最新热门”、“最新回复”、“最新发表”、“我的帖子”
  * guide-new-hot-my.css
  */
@@ -3765,9 +3732,6 @@
 }
 
 /* 
- * @date 2020-03-29T19:12:35.338
- */
-/* 
  * 导读的“最新精华”、“抢沙发”
  * guide-digest-sofa.css
  */
@@ -3782,9 +3746,6 @@
 	}
 }
 
-/* 
- * @date 2020-03-29T19:12:35.338
- */
 /* 
  * 导读的“我的帖子”
  * guide-my.css
