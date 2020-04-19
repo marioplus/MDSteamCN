@@ -106,6 +106,10 @@ body:before {
     padding: unset;
     background-color: unset;
 }
+.index_subject_row {
+    padding-left: 0;
+    padding-top: 80px;
+}
 
 /* 分区居中 */
 .index_subject_row,
@@ -247,6 +251,7 @@ body:before {
     vertical-align: top;
     outline: 0;
 }
+
 .module.cl.xl.xl1 a:before {
     position: absolute;
     top: auto;
@@ -263,6 +268,7 @@ body:before {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
+
 .module.cl.xl.xl1 a:focus:before,
 .module.cl.xl.xl1 a:hover:before {
     -webkit-transform: scaleX(1);
@@ -277,7 +283,6 @@ body:before {
     vertical-align: top;
     outline: 0;
 }
-
 #wp > div:nth-child(3) .subject_row_detail_text_up a:before {
     position: absolute;
     top: auto;
@@ -294,7 +299,6 @@ body:before {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
-
 #wp > div:nth-child(3) .subject_row_detail_text_up a:focus:before,
 #wp > div:nth-child(3) .subject_row_detail_text_up a:hover:before {
     -webkit-transform: scaleX(1);
@@ -309,40 +313,7 @@ body:before {
     vertical-align: top;
     outline: 0;
 }
-
 #wp > div:nth-child(4) .subject_row_detail_text_up a:before {
-    position: absolute;
-    top: auto;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    content: ' ';
-    background-color: #f06292;
-    -webkit-transition: all .2s;
-    transition: all .2s;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-#wp > div:nth-child(4) .subject_row_detail_text_up a:focus:before,
-#wp > div:nth-child(4) .subject_row_detail_text_up a:hover:before {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-}
-
-#wp > div:nth-child(5) .subject_row_detail_text_up a {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    text-decoration: none;
-    vertical-align: top;
-    outline: 0;
-}
-
-#wp > div:nth-child(5) .subject_row_detail_text_up a:before {
     position: absolute;
     top: auto;
     bottom: 0;
@@ -358,14 +329,13 @@ body:before {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
-
-#wp > div:nth-child(5) .subject_row_detail_text_up a:focus:before,
-#wp > div:nth-child(5) .subject_row_detail_text_up a:hover:before {
+#wp > div:nth-child(4) .subject_row_detail_text_up a:focus:before,
+#wp > div:nth-child(4) .subject_row_detail_text_up a:hover:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
 
-#wp > div:nth-child(6) .subject_row_detail_text_up a {
+#wp > div:nth-child(5) .subject_row_detail_text_up a {
     position: relative;
     display: inline-block;
     overflow: hidden;
@@ -373,8 +343,7 @@ body:before {
     vertical-align: top;
     outline: 0;
 }
-
-#wp > div:nth-child(6) .subject_row_detail_text_up a:before {
+#wp > div:nth-child(5) .subject_row_detail_text_up a:before {
     position: absolute;
     top: auto;
     bottom: 0;
@@ -390,14 +359,13 @@ body:before {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
-
-#wp > div:nth-child(6) .subject_row_detail_text_up a:focus:before,
-#wp > div:nth-child(6) .subject_row_detail_text_up a:hover:before {
+#wp > div:nth-child(5) .subject_row_detail_text_up a:focus:before,
+#wp > div:nth-child(5) .subject_row_detail_text_up a:hover:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
 
-#wp > div:nth-child(7) > div:nth-child(1) a {
+#wp > div:nth-child(6) .subject_row_detail_text_up a {
     position: relative;
     display: inline-block;
     overflow: hidden;
@@ -405,8 +373,67 @@ body:before {
     vertical-align: top;
     outline: 0;
 }
+#wp > div:nth-child(6) .subject_row_detail_text_up a:before {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    content: ' ';
+    background-color: #f06292;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#wp > div:nth-child(6) .subject_row_detail_text_up a:focus:before,
+#wp > div:nth-child(6) .subject_row_detail_text_up a:hover:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
 
-#wp > div:nth-child(7) > div:nth-child(1) a:before {
+#wp > div:nth-child(7) .subject_row_detail_text_up a {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    text-decoration: none;
+    vertical-align: top;
+    outline: 0;
+}
+#wp > div:nth-child(7) .subject_row_detail_text_up a:before {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    content: ' ';
+    background-color: #309df3;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#wp > div:nth-child(7) .subject_row_detail_text_up a:focus:before,
+#wp > div:nth-child(7) .subject_row_detail_text_up a:hover:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+#wp > div:nth-child(8) > div:nth-child(1) a {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    text-decoration: none;
+    vertical-align: top;
+    outline: 0;
+}
+#wp > div:nth-child(8) > div:nth-child(1) a:before {
     position: absolute;
     top: auto;
     bottom: 0;
@@ -422,14 +449,13 @@ body:before {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
-
-#wp > div:nth-child(7) > div:nth-child(1) a:focus:before,
-#wp > div:nth-child(7) > div:nth-child(1) a:hover:before {
+#wp > div:nth-child(8) > div:nth-child(1) a:focus:before,
+#wp > div:nth-child(8) > div:nth-child(1) a:hover:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
 
-#wp > div:nth-child(7) > div:nth-child(2) a {
+#wp > div:nth-child(8) > div:nth-child(2) a {
     position: relative;
     display: inline-block;
     overflow: hidden;
@@ -437,8 +463,7 @@ body:before {
     vertical-align: top;
     outline: 0;
 }
-
-#wp > div:nth-child(7) > div:nth-child(2) a:before {
+#wp > div:nth-child(8) > div:nth-child(2) a:before {
     position: absolute;
     top: auto;
     bottom: 0;
@@ -454,14 +479,13 @@ body:before {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
-
-#wp > div:nth-child(7) > div:nth-child(2) a:focus:before,
-#wp > div:nth-child(7) > div:nth-child(2) a:hover:before {
+#wp > div:nth-child(8) > div:nth-child(2) a:focus:before,
+#wp > div:nth-child(8) > div:nth-child(2) a:hover:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
 
-#wp > div:nth-child(7) > div:nth-child(3) a {
+#wp > div:nth-child(8) > div:nth-child(3) a {
     position: relative;
     display: inline-block;
     overflow: hidden;
@@ -469,8 +493,7 @@ body:before {
     vertical-align: top;
     outline: 0;
 }
-
-#wp > div:nth-child(7) > div:nth-child(3) a:before {
+#wp > div:nth-child(8) > div:nth-child(3) a:before {
     position: absolute;
     top: auto;
     bottom: 0;
@@ -486,14 +509,14 @@ body:before {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
-
-#wp > div:nth-child(7) > div:nth-child(3) a:focus:before,
-#wp > div:nth-child(7) > div:nth-child(3) a:hover:before {
+#wp > div:nth-child(8) > div:nth-child(3) a:focus:before,
+#wp > div:nth-child(8) > div:nth-child(3) a:hover:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
 
-#wp > div:nth-child(8) a {
+
+#wp > div:nth-child(9) .subject_row_detail_text_up a {
     position: relative;
     display: inline-block;
     overflow: hidden;
@@ -501,8 +524,37 @@ body:before {
     vertical-align: top;
     outline: 0;
 }
+#wp > div:nth-child(9) .subject_row_detail_text_up a:before {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    content: ' ';
+    background-color: #673ab7;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#wp > div:nth-child(9) .subject_row_detail_text_up a:focus:before,
+#wp > div:nth-child(9) .subject_row_detail_text_up a:hover:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
 
-#wp > div:nth-child(8) a:before {
+#wp > div:nth-child(10) a {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    text-decoration: none;
+    vertical-align: top;
+    outline: 0;
+}
+#wp > div:nth-child(10) a:before {
     position: absolute;
     top: auto;
     bottom: 0;
@@ -518,9 +570,8 @@ body:before {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
-
-#wp > div:nth-child(8) a:focus:before,
-#wp > div:nth-child(8) a:hover:before {
+#wp > div:nth-child(10) a:focus:before,
+#wp > div:nth-child(10) a:hover:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
@@ -722,10 +773,10 @@ ul.tb.cl > li a {
 
 /*tab 主题名字过长导致超出 tab外框*/
 .module.cl.xl.xl1 ol li a[title] {
-    max-width:380px;
+    max-width: 380px;
     display: inline-block;
     overflow: hidden;
-    text-overflow:ellipsis;
+    text-overflow: ellipsis;
     white-space: nowrap;
 }
 
@@ -736,16 +787,18 @@ ul.tb.cl > li a {
     padding-right: 0 !important;
     transition: all .2s;
 }
-.frame-tab .xl.cl:after{
-    display:none;
+
+.frame-tab .xl.cl:after {
+    display: none;
 }
+
 .frame-tab .xl::-webkit-scrollbar-thumb {
     background-color: var(--colorA200);
 }
 
-    /* endregion 1.轮播图和tab */
+/* endregion 1.轮播图和tab */
 
-/* region 2.平台周边 */
+/* region 2.steam平台周边 */
 #wp > div:nth-child(3) .index_subject_title > div {
     color: #009688 !important;
     font-weight: bold;
@@ -766,92 +819,117 @@ ul.tb.cl > li a {
 
 /* endregion 2.平台周边 */
 
-/* region 3.问题互助 */
-#wp > div:nth-child(4) .index_subject_title2 > div {
-    color: #f06292 !important;
+/* region 3.友商平台 */
+#wp > div:nth-child(4) .index_subject_title > div {
+    color: #ffc107 !important;
     font-weight: bold;
 }
 
 #wp > div:nth-child(4) .forum-icon.hot,
 #wp > div:nth-child(4) .forum-icon {
-    background: #f06292;
+    background: #ffc107;
 }
 
 #wp > div:nth-child(4) .subject_row_detail_text_up a {
-    color: #f06292;
+    color: #ffc107;
 }
 
 #wp > div:nth-child(4) .forum_today_post {
-    color: #e91e63;
+    color: #ffa000;
 }
 
-#wp > div:nth-child(4) .subject_row_detail_text_down {
-    color: #9ca6d9;
-}
+/* endregion 3.友商平台 */
 
-/* endregion 3.问题互助 */
-
-/* region 4.友商平台 */
+/* region 4.游戏讨论 */
 #wp > div:nth-child(5) .index_subject_title > div {
-    color: #ffc107 !important;
+    color: #3949ab !important;
     font-weight: bold;
 }
 
 #wp > div:nth-child(5) .forum-icon.hot,
 #wp > div:nth-child(5) .forum-icon {
-    background: #ffc107;
+    background: #3949ab;
 }
 
 #wp > div:nth-child(5) .subject_row_detail_text_up a {
-    color: #ffc107;
+    color: #3949ab;
 }
 
 #wp > div:nth-child(5) .forum_today_post {
-    color: #ffa000;
+    color: #0d47a1;
 }
 
-/* endregion 4.友商平台 */
+#wp > div:nth-child(5) .subject_row_detail_text_down {
+    color: #ffffff;
+}
 
-/* region 5.游戏讨论 */
+/* endregion 4.游戏讨论 */
+
+/* region 5.问题互助 */
 #wp > div:nth-child(6) .index_subject_title > div {
-    color: #3949ab !important;
+    color: #f06292 !important;
     font-weight: bold;
 }
 
 #wp > div:nth-child(6) .forum-icon.hot,
 #wp > div:nth-child(6) .forum-icon {
-    background: #3949ab;
+    background: #f06292;
 }
 
 #wp > div:nth-child(6) .subject_row_detail_text_up a {
-    color: #3949ab;
+    color: #f06292;
 }
 
 #wp > div:nth-child(6) .forum_today_post {
-    color: #0d47a1;
+    color: #e91e63;
 }
 
 #wp > div:nth-child(6) .subject_row_detail_text_down {
-    color: #ffffff;
+    color: #9ca6d9;
 }
 
-/* endregion 5.游戏讨论 */
+/* endregion 5.问题互助 */
 
-/* region 6.汉化 */
+/* region 6.水区杂谈 */
+#wp > div:nth-child(7) .index_subject_title > div {
+    color: #309df3 !important;
+    font-weight: bold;
+}
+
+#wp > div:nth-child(7) .forum-icon.hot,
+#wp > div:nth-child(7) .forum-icon {
+    background: #309df3 ;
+}
+
+#wp > div:nth-child(7) .subject_row_detail_text_up a {
+    color: #309df3 !important;
+}
+
+#wp > div:nth-child(7) .forum_today_post {
+    color: #309df3;
+}
+
+#wp > div:nth-child(7) .subject_row_detail_text_down {
+    color: #309df3;
+}
+
+/* endregion 6.水区杂谈  */
+
+/* region 7.汉化 */
 /* 居中 */
-#wp > div:nth-child(7) {
+#wp > div:nth-child(8) {
     width: calc(100% - (100% - 1200px) / 2);
     padding-left: calc((100% - 1200px) / 2);
 }
 
-#wp > div:nth-child(7) > div {
+#wp > div:nth-child(8) > div {
     width: calc(1200px / 3 - 20px);
     margin-top: unset;
     background: unset;
     height: unset;
 }
 
-#wp > div:nth-child(7) .middle_subject_row {
+#wp > div:nth-child(8) .middle_subject_row {
     padding-left: 20px;
 }
 
@@ -901,51 +979,34 @@ ul.tb.cl > li a {
 }
 
 /* endregion 起源汉化组 */
-/* endregion 6 */
-
-/* region 7.休闲、社区 */
-#wp > div:nth-child(8) {
-    width: calc(100% - (100% - 1200px) / 2);
-    padding-left: calc((100% - 1200px) / 2);
-}
-
-.foot_subject_left, .foot_subject_right {
-    margin: 0;
-    background: unset;
-}
-
-#wp > div:nth-child(8) .foot_subject_detail_right {
-    font-size: 14px;
-}
-
-#wp > div:nth-child(8) .foot_subject_detail_right > div:nth-child(1) {
-    margin-top: 2px !important;
-}
-
-#wp > div:nth-child(8) .foot_subject_detail_right > div:nth-child(3),
-#wp > div:nth-child(8) .foot_subject_detail_right > div:nth-child(4) {
-    margin-top: -1px !important;
-}
-
-#wp > div:nth-child(8) .foot_right_subject > div {
-    font-size: 14px;
-    padding-top: 3px;
-    margin: 0 !important;
-}
-
-#wp > div:nth-child(8) .forum-icon.hot,
-#wp > div:nth-child(8) .forum-icon,
-#wp > div:nth-child(8) .dot {
-    background: #01579b;
-}
-
-#wp > div:nth-child(8) a {
-    color: #01579b;
-}
-
 /* endregion 7 */
 
-/* region 8.人数 */
+/* region 8.社区服务 */
+#wp > div:nth-child(9) .index_subject_title > div {
+    color: #673ab7 !important;
+    font-weight: bold;
+}
+
+#wp > div:nth-child(9) .forum-icon.hot,
+#wp > div:nth-child(9) .forum-icon {
+    background: #673ab7;
+}
+
+#wp > div:nth-child(9) .subject_row_detail_text_up a {
+    color: #673ab7;
+}
+
+#wp > div:nth-child(9) .forum_today_post {
+    color: #673ab7;
+}
+
+#wp > div:nth-child(9) .subject_row_detail_text_down {
+    color: #673ab7;
+}
+
+/* endregion 7.社区服务 */
+
+/* region 9.人数 */
 .bbs_daily_stats {
     margin-top: unset;
     background: #424242;
@@ -956,9 +1017,9 @@ ul.tb.cl > li a {
     color: #b3e5fc;
 }
 
-/* endregion 8 */
+/* endregion 9 */
 
-/* region 9.页脚 */
+/* region 10.页脚 */
 .subforunm_foot_banner {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -982,4 +1043,4 @@ ul.tb.cl > li a {
     display: none;
 }
 
-/* endregion 9 */
+/* endregion 10 */

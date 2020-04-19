@@ -377,20 +377,20 @@
 	 * 变量配置
 	 */
 	:root {
-	    --color50: var(--/*[[theme]]*/50);
-	    --color100: var(--/*[[theme]]*/100);
-	    --color200: var(--/*[[theme]]*/200);
-	    --color300: var(--/*[[theme]]*/300);
-	    --color400: var(--/*[[theme]]*/400);
-	    --color500: var(--/*[[theme]]*/500);
-	    --color600: var(--/*[[theme]]*/600);
-	    --color700: var(--/*[[theme]]*/700);
-	    --color800: var(--/*[[theme]]*/800);
-	    --color900: var(--/*[[theme]]*/900);
-	    --colorA100: var(--/*[[theme]]*/A100);
-	    --colorA200: var(--/*[[theme]]*/A200);
-	    --colorA400: var(--/*[[theme]]*/A400);
-	    --colorA700: var(--/*[[theme]]*/A700);
+	    --color50: var(--blue50);
+	    --color100: var(--blue100);
+	    --color200: var(--blue200);
+	    --color300: var(--blue300);
+	    --color400: var(--blue400);
+	    --color500: var(--blue500);
+	    --color600: var(--blue600);
+	    --color700: var(--blue700);
+	    --color800: var(--blue800);
+	    --color900: var(--blue900);
+	    --colorA100: var(--blueA100);
+	    --colorA200: var(--blueA200);
+	    --colorA400: var(--blueA400);
+	    --colorA700: var(--blueA700);
 	
 	    --color-accent: var(--color500);
 	}
