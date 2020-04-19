@@ -239,7 +239,7 @@ body:before {
     transform: scaleX(1);
 }
 
-.module.cl.xl.xl1 a:nth-child(even) {
+.module.cl.xl.xl1 a {
     position: relative;
     display: inline-block;
     overflow: hidden;
@@ -247,8 +247,7 @@ body:before {
     vertical-align: top;
     outline: 0;
 }
-
-.module.cl.xl.xl1 a:nth-child(even):before {
+.module.cl.xl.xl1 a:before {
     position: absolute;
     top: auto;
     bottom: 0;
@@ -264,9 +263,8 @@ body:before {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
-
-.module.cl.xl.xl1 a:nth-child(even):focus:before,
-.module.cl.xl.xl1 a:nth-child(even):hover:before {
+.module.cl.xl.xl1 a:focus:before,
+.module.cl.xl.xl1 a:hover:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
