@@ -95,7 +95,7 @@ body:before {
 .index_subject_title div,
 .index_subject_title2 div {
     float: unset;
-    width: 300px;
+    width: 300px !important;
     height: 100px;
     font-size: 20px;
     left: calc((100% - 300px) / 2);
