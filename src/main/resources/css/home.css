@@ -731,7 +731,21 @@ ul.tb.cl > li a {
     white-space: nowrap;
 }
 
-/* endregion 1.轮播图和tab */
+/* 适配预览帖子滚动 */
+.frame-tab .xl {
+    overflow: hidden;
+    height: 324px;
+    padding-right: 0 !important;
+    transition: all .2s;
+}
+.frame-tab .xl.cl:after{
+    display:none;
+}
+.frame-tab .xl::-webkit-scrollbar-thumb {
+    background-color: var(--colorA200);
+}
+
+    /* endregion 1.轮播图和tab */
 
 /* region 2.平台周边 */
 #wp > div:nth-child(3) .index_subject_title > div {
