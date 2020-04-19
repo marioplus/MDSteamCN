@@ -53,3 +53,4 @@ $RECYCLE.BIN/
 .idea/*
 *.iml
 *.kotlin_module
+/target/

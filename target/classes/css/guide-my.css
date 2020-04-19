@@ -1,8 +1,0 @@
-/*
- * 导读的“我的帖子”
- * guide-my.css
- * @url https://keylol.com/forum.php?mod=guide&view=my
- */
-#pgt.cl > a {
-    left: unset !important;
-}

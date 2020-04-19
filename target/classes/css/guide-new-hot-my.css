@@ -1,8 +1,0 @@
-/*
- * 导读的“最新热门”、“最新回复”、“最新发表”、“我的帖子”
- * guide-new-hot-my.css
- * @url https://keylol.com/forum.php?mod=guide&view=hot
- */
-#threadlist > .bm_c {
-    padding: 0 0 50px 0;
-}
