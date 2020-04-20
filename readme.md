@@ -16,7 +16,7 @@
 
 放几张预览图
 
-![首页.png](https://i.loli.net/2020/03/29/3YdxqOJXeCWMP8b.png)
+![首页.png](https://i.loli.net/2020/04/20/NCTwb3KAmLRkJj5.png)
 
 ![导读.png](https://i.loli.net/2020/03/16/jJRZaibKuDQSnxN.png)
 
