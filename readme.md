@@ -69,16 +69,18 @@
 
 **2019-05-26**
 1. add: 首页、板块帖子列表、帖子详情
-    
+
 ## 安装
 
-### 1. 安装Stylus插件 
+### 1. 安装Stylus插件
+
 - [chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?utm_source=chrome-ntp-icon)
 - [firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
 - [opera](https://addons.opera.com/en-gb/extensions/details/stylus/)
 
 ### 2. 安装我的[MDSteamCN](https://userstyles.org/styles/172244/mdsteamcn)样式
-进入页面点**Install Style**就可以了
+
+进入页面点**Install Style**就可以了,在安装之前可以选择 **Customize Settings**自定义主题色。
 
 ## 吐槽
 
