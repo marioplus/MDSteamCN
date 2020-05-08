@@ -1,6 +1,6 @@
 path:
   css: css
-  out: H:\Code\Steam\MDSteamCN\src\main\resources\out
+  out: ./src/main/resources/out
 match-mode:
   domain: domain
   url: url

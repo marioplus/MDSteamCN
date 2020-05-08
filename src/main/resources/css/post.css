@@ -511,6 +511,13 @@ img.authicn.vm {
 
 /* endregion*/
 
+/* region 帖子显示宽度*/
+.pcb {
+    margin-right: unset;
+}
+
+/* endregion*/
+
 /* endregion*/
 
 /* region 底部广告*/
@@ -662,6 +669,12 @@ img.authicn.vm {
     white-space: nowrap;
     margin-left: 0 !important;
     position: absolute;
+}
+
+#thread_subject {
+    max-width: 900px;
+    display: inline-block;
+    float: none;
 }
 
 /* endregion*/
