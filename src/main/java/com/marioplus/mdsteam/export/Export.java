@@ -76,10 +76,13 @@ public class Export {
         try {
             File file = new File(path);
             if (!file.exists()) {
+                new File(file.getParent()).mkdirs();
                 file.createNewFile();
             }
             FileWriter writer = new FileWriter(file);
             writer.append(content).flush();
+            System.out.println("导出完成");
+            System.out.println(file.getAbsolutePath());
         } catch (IOException e) {
             e.printStackTrace();
             System.out.println("写入文件失败");

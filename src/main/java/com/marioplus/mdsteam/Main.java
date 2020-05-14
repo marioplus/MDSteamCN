@@ -8,6 +8,6 @@ import java.util.Arrays;
  **/
 public class Main {
     public static void main(String[] args) {
-        System.out.println(Md.typeA(Arrays.asList()));
+        System.out.println(Md.typeA(Arrays.asList("tA")));
     }
 }
