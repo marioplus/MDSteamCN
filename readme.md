@@ -26,6 +26,9 @@
 
 ## 更新
 
+**2020-05-14**
+1. fix: 解决首页文字过小的bug？？？
+
 **2020-05-08**
 1. fix: 由于论坛页面调整导致的帖子页面标题不居中
 2. fix: 由于论坛页面调整导致的帖子页面内容宽度问题
@@ -85,6 +88,153 @@
 ### 2. 安装我的[MDSteamCN](https://userstyles.org/styles/172244/mdsteamcn)样式
 
 进入页面点**Install Style**就可以了,在安装之前可以选择 **Customize Settings**自定义主题色。
+
+## 接锅
+
+每个人的审美有不一样，所以我把项目托管于[github](https://github.com/marioplus/MDSteamCN)
+
+本人主力开发语言为java, 所以基于java写了一套简化流程的帮助类。
+
+### 项目结构
+
+```
+MDSteamCN
+│
+├─src
+│  └─main
+│      ├─java
+│      │  └─com
+│      │      └─marioplus
+│      │          └─mdsteam
+│      │              │  Main.java                  调用下面这货
+│      │              │  Md.java                    一些经常使用的样式的工具类
+│      │              │
+│      │              ├─enums
+│      │              │      ...
+│      │              │
+│      │              ├─export
+│      │              │      Export.java            打包
+│      │              │      ExportConfig.java
+│      │              │
+│      │              └─utils
+│      │                      YamlFc.java
+│      │
+│      └─resources
+│          ├─config
+│          │      export.yml                        打包配置
+│          │
+│          ├─css                                    不同模块的样式文件
+│          │      guide-digest-sofa.css
+│          │      ...
+│          │
+│          ├─out
+│          │      main.css                          打包后的文件
+│          │
+│          └─release                                存放每个版本的导出文件
+│              ├─20200104
+│              │      ...
+```
+
+### 配置文件
+
+配置位于 **src/main/resources/config/export.yml**
+
+截取其中一部分
+
+```yaml
+path:
+  # 资源文件夹，存放每个模块的样式文件
+  source: ./src/main/resources/css/
+  # 输出文件，打包后的输出
+  out: ./src/main/resources/out/main.css
+# 匹配模式，对应stylus的4种模式，仅仅为了复制方便，没有其他用途
+match-mode:
+  # 域名
+  domain: domain
+  # 固定url
+  url: url
+  # url前缀
+  url-prefix: url-prefix
+  # 正则
+  regexp: regexp
+# 资源文件配置
+configs:
+  # 注释，打包为一个文件后的说明
+  - note: md颜色
+    # 对应文件名称
+    file-name: mdColor.css
+    # 匹配网址的方式
+    matches:
+      - # 匹配模式
+      - mode: domain
+        # 对应模式下的参数
+        params:
+          - keylol.com
+  - note: 变量配置
+    # 测试时启用此文件，对应的参数
+    file-name: var.css
+    # 正式打包时使用此文件
+#    file-name: optional.txt
+    matches:
+      - mode: domain
+        params:
+          - keylol.com
+```
+
+### 完整流程
+
+#### 1. 在config文件中配置一个资源文件
+
+```yaml
+configs:
+  - note: 自定义样式
+    file-name: custom.css
+    matches:
+      - mode: domain
+        params:
+          - keylol.com
+```
+
+#### 2. 编写样式
+
+#### 3. 打包测试, 启用测试用文件
+
+```yaml
+configs:
+  - note: 变量配置
+    # 测试时启用此文件，对应的参数
+    file-name: var.css
+    # 正式打包时使用此文件
+#    file-name: optional.txt
+```
+**Export.main()** 打包
+```yaml
+导出完成
+H:\Code\Steam\MDSteamCN\.\src\main\resources\out\main.css\main.css
+2020-05-14T22:14:50.140
+```
+
+#### 4. 页面查看效果
+
+复制导出文件内容
+
+![1.png](https://i.loli.net/2020/05/14/c71dI9LTA4XiE2W.png)
+
+![2.png](https://i.loli.net/2020/05/14/RjiJ2VHBuK1yLMA.png)
+
+#### 5.发布
+
+修改配置
+```yaml
+configs:
+  - note: 变量配置
+    # 测试时启用此文件，对应的参数
+#    file-name: var.css
+    # 正式打包时使用此文件
+    file-name: optional.txt
+```
+重新打包
+    
 
 ## 吐槽
 

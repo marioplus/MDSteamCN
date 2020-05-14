@@ -54,3 +54,4 @@ $RECYCLE.BIN/
 *.iml
 *.kotlin_module
 /target/
+/src/main/resources/out

@@ -1,20 +1,35 @@
 path:
-  css: css
-  out: ./src/main/resources/out
+  # 资源文件夹，存放每个模块的样式文件
+  source: ./src/main/resources/css/
+  # 输出文件，打包后的输出
+  out: ./src/main/resources/out/main.css
+# 匹配模式，对应stylus的4种模式，仅仅为了复制方便，没有其他用途
 match-mode:
+  # 域名
   domain: domain
+  # 固定url
   url: url
+  # url前缀
   url-prefix: url-prefix
+  # 正则
   regexp: regexp
+# 资源文件配置
 configs:
+  # 注释，打包为一个文件后的说明
   - note: md颜色
+    # 对应文件名称
     file-name: mdColor.css
+    # 匹配网址的方式
     matches:
+      # 匹配模式
       - mode: domain
+        # 对应模式下的参数
         params:
           - keylol.com
   - note: 变量配置
+    # 测试时启用此文件，对应的参数
 #    file-name: var.css
+    # 正式打包时使用此文件
     file-name: optional.txt
     matches:
       - mode: domain

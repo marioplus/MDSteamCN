@@ -17,7 +17,7 @@ public class ExportConfig {
 
     @Data
     public static class Path {
-        public String css;
+        public String source;
         public String out;
     }
 
