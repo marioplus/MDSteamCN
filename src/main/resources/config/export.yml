@@ -46,7 +46,7 @@ configs:
     matches:
       - mode: regexp
         params:
-          - https?://keylol.com/(forum.php)?
+          - "https?://keylol.com/(forum.php)?"
   - note: 帖子内容
     file-name: post.css
     matches:
@@ -59,8 +59,8 @@ configs:
     matches:
       - mode: regexp
         params:
-          - .+keylol.com/f[0-9]{3}.+
-          - .+keylol.com.+forumdisplay.+fid=[0-9]+.+
+          - ".+keylol.com/f[0-9]{3}.+"
+          - ".+keylol.com.+forumdisplay.+fid=[0-9]+.+"
   - note: 导读
     file-name: guide.css
     matches:
@@ -80,19 +80,19 @@ configs:
     matches:
       - mode: regexp
         params:
-          - .+keylol.com.+mod=guide&view=(digest|sofa)
+          - ".+keylol.com.+mod=guide&view=(digest|sofa)"
   - note: 导读的“我的帖子”
     file-name: guide-my.css
     matches:
       - mode: regexp
         params:
-          - .+keylol.com.+mod=guide&view=my
+          - ".+keylol.com.+mod=guide&view=my"
   - note: 通知
     file-name: notification.css
     matches:
       - mode: regexp
         params:
-          - .+keylol.com/home.php\?mod=space&do=(pm.*|notice(&view=(mypost|interactive|system|app))?)
+          - ".+keylol.com.+mod=space&do=(pm.*|notice(&view=(mypost|interactive|system|app))?)"
   - note: 页脚
     file-name: foot.css
     matches:
