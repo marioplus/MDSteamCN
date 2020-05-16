@@ -608,39 +608,6 @@ body:before {
     transform: scaleX(1);
 }
 
-.subforunm_foot_banner a {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    text-decoration: none;
-    vertical-align: top;
-    outline: 0;
-}
-
-.subforunm_foot_banner a:before {
-    position: absolute;
-    top: auto;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    content: ' ';
-    background-color: white;
-    -webkit-transition: all .2s;
-    transition: all .2s;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-.subforunm_foot_banner a:focus:before,
-.subforunm_foot_banner a:hover:before {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-}
-
-
 /* endregion*/
 
 /* region 0.关注重点 & 小广告 & 站点公告*/
@@ -1020,27 +987,8 @@ ul.tb.cl > li a {
 /* endregion 9 */
 
 /* region 10.页脚 */
-.subforunm_foot_banner {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.subforunm_foot_bg img {
-    display: none;
-}
-
-.subforunm_foot_banner,
 .subforunm_foot {
-    background: #212121;
-    margin-top: unset;
-}
-
-.subforunm_foot_banner > div {
-    width: 1200px;
-}
-
-.subforunm_foot_intro {
-    display: none;
+    margin-top: 0 !important;
 }
 
 /* endregion 10 */
