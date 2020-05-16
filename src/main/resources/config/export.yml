@@ -92,7 +92,7 @@ configs:
     matches:
       - mode: regexp
         params:
-          - ".+keylol.com.+mod=space&do=(pm.*|notice(&view=(mypost|interactive|system|app))?)"
+          - ".+keylol.com.+mod=space&do=(pm|notice(&view=.*)?).*"
   - note: 页脚
     file-name: foot.css
     matches:
