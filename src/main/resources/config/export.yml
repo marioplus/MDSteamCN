@@ -16,21 +16,11 @@ match-mode:
 # 资源文件配置
 configs:
   # 注释，打包为一个文件后的说明
-  - note: md颜色
-    # 对应文件名称
-    file-name: mdColor.css
-    # 匹配网址的方式
-    matches:
-      # 匹配模式
-      - mode: domain
-        # 对应模式下的参数
-        params:
-          - keylol.com
   - note: 变量配置
     # 测试时启用此文件，对应的参数
-#    file-name: var.css
+    file-name: var.css
     # 正式打包时使用此文件
-    file-name: optional.txt
+#    file-name: optional.txt
     matches:
       - mode: domain
         params:
@@ -61,41 +51,9 @@ configs:
         params:
           - ".+keylol.com/f[0-9]{3}.+"
           - ".+keylol.com.+forumdisplay.+fid=[0-9]+.+"
-  - note: 导读
-    file-name: guide.css
-    matches:
-      - mode: url-prefix
-        params:
-          - http://keylol.com/forum.php?mod=guide
-          - https://keylol.com/forum.php?mod=guide
-  - note: 导读的“最新热门”、“最新回复”、“最新发表”、“我的帖子”
-    file-name: guide-new-hot-my.css
-    matches:
-      - mode: url-prefix
-        params:
-          - http://keylol.com/forum.php?mod=guide
-          - https://keylol.com/forum.php?mod=guide
-  - note: 导读的“最新精华”、“抢沙发”
-    file-name: guide-digest-sofa.css
-    matches:
-      - mode: regexp
-        params:
-          - ".+keylol.com.+mod=guide&view=(digest|sofa)"
-  - note: 导读的“我的帖子”
-    file-name: guide-my.css
-    matches:
-      - mode: regexp
-        params:
-          - ".+keylol.com.+mod=guide&view=my"
   - note: 通知
     file-name: notification.css
     matches:
       - mode: regexp
         params:
           - ".+keylol.com.+mod=space&do=(pm|notice(&view=.*)?).*"
-  - note: 页脚
-    file-name: foot.css
-    matches:
-      - mode: domain
-        params:
-          - keylol.com
