@@ -357,6 +357,55 @@ a#a_favorite:before {
 
 /* endregion*/
 
+/*region 新回复提醒*/
+.tl #forumnewshow {
+    position: absolute;
+}
+
+.tl #forumnewshow td {
+    padding: unset !important;
+}
+
+.tl #forumnewshow a {
+    background-color: var(--color500) !important;
+    position: fixed;
+    right: 50px;
+    bottom: 110px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    opacity: 0.8;
+    border: unset;
+    webkit-box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 5px 8px 0 rgba(0, 0, 0, .14), 0 1px 14px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 5px 8px 0 rgba(0, 0, 0, .14), 0 1px 14px 0 rgba(0, 0, 0, .12);
+    transition: all .3s linear;
+}
+
+.tl #forumnewshow a:hover {
+    opacity: 1;
+}
+
+.tl #forumnewshow a:active {
+    -webkit-box-shadow: 0 5px 5px -3px rgba(0, 0, 0, .2), 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12) !important;
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, .2), 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12) !important;
+}
+
+.tl #forumnewshow a:before {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    top: 12px;
+    right: 13px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACO0lEQVRYR+2WT4hOYRTGf88GKysUIZr8V0ShJCysrVj5E2V2apaMBSkspaz8KWQhsxMLkyIL05T/NVhNiYUisVMWj07dr965c+fe936NPmpOvZvve85znvfc855zRI9NPY7PjID/JwO25wP7irMEWAzMLmroNTAEPJT0ok1dNWbA9kKgvziLMsivAJckvcvA1heh7R3AVWBVDlmCGZO0PsdnygzY3gvcAeaUiEaAB8B34BvwFTgKHJw2AbZnAU+BrQnpfeCWpPjWk8z2cuAQsAU4K2m06wzYPg2cSQiGJO3PIWyLmfQJiqJ7DnQK7q8FD7FVAtLb/wZWSPrY9ma5+CoBUWTbCoIbko7kknWDmyDA9mrgfUK0R9KjbohzfcoCdgGPO86SGhtVbqCpcP+cgLXA2HRkwPYyIDK6E/gFnJT0o5yJcgbmAj8T0FJJn9qk2XZc4npSyB33fknR1idY1St4BWwsUJclHW8poNzEOu7RRQ/nCBgEziXADZLethRxDDgPzEv8xiX15QjYBDxLZn3rTmh7ALhYIbpP0nj6e+Uzs30BOJEAs0XYjoF0M/H9AnyIgqx61nXjOKZZTLaOxRS8Jmm46nPYXllMw1Ol/9fVLSe1jca2K4JFPdwunusCIFa17UDsD2XbLelJXf00djrbd4s9sE0dvgEGmoIHYaOAANmOl3EAWJOhIt76oKTYlhotS0AhIrakSHNsSZuB6HRxPgPRrO4Bw5JeNkZNANkC2pC2wc4I6HkG/gCaXq0hN6FAGQAAAABJRU5ErkJggg==);
+}
+
+/*endregion 新回复提醒*/
+
 /* region 列表*/
 
 /* region 间隔*/
