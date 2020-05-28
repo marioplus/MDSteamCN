@@ -104,4 +104,4 @@ configs:
     matches:
       - mode: regexp
         params:
-          - ".+keylol.com.+mod=post&action=(newthread|reply).*"
+          - ".+keylol.com.+mod=post&action=(newthread|reply|edit).*"
