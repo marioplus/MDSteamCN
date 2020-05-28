@@ -20,7 +20,13 @@
 
 ![提醒.png](https://i.loli.net/2020/05/24/zqiEDnOy2L7Vf8p.png)
 
+![高级编辑器页面.png](https://i.loli.net/2020/05/29/5p8JkE4XAKFOCcm.png)
+
 ## 更新
+
+**2020-05-29**
+1. update: 增加高级编辑器页面适配
+2. update: 黑色更深一些
 
 **2020-05-24**
 1. 首次提交

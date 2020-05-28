@@ -2,12 +2,12 @@
  * 变量配置
  */
 :root {
-    --dark-accent: var(--blue500);
+    --dark-accent: var(--color600);
 
-    --bg-dark1: #3a3a3a;
-    --bg-dark2: #303030;
-    --bg-dark3: #545454;
-    --bg-dark4: #878787;
+    --bg-dark2: #151515;
+    --bg-dark1: #222;
+    --bg-dark3: #444;
+    --bg-dark4: #777;
 
     --t-dark: #d6d6d6;
 
