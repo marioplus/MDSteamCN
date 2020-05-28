@@ -8,6 +8,8 @@ import java.util.Arrays;
  **/
 public class Main {
     public static void main(String[] args) {
-        System.out.println(Md.typeA(Arrays.asList("tA")));
+//        System.out.println(Md.btn(Arrays.asList("#postsubmit")));
+//        System.out.println(Md.btnRaised(Arrays.asList("#postsubmit")));
+        System.out.println(Md.shadow(3));
     }
 }

@@ -99,3 +99,9 @@ configs:
       - mode: domain
         params:
           - keylol.com
+  - note: 高级编辑框
+    file-name: new-thread.css
+    matches:
+      - mode: regexp
+        params:
+          - ".+keylol.com.+mod=post&action=(newthread|reply).*"
