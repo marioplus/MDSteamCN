@@ -1137,14 +1137,15 @@ ul.tb.cl.mbw > li:nth-child(1) > a:before {
 /* endregion 编辑框 */
 
 /* region 附加选项、阅读权限、回帖奖励、抢楼主题、主题标签、定时发布 */
-#post_extra {
+#postbox {
     --tab-bg: #f7f7f7;
     --tab-bg-avtive: #eee;
 }
 
 #post_extra {
-    margin-top: -1px;
+    margin-top: 0;
     border: 1px solid var(--grey300);
+    border-top: none;
     border-radius: 0 0 5px 5px;
     padding: unset !important;
     webkit-box-shadow: 0 4px 3px -2px rgba(0, 0, 0, .2), 0 4px 4px 0 rgba(0, 0, 0, .14), 0 2px 8px 0 rgba(0, 0, 0, .12);
@@ -1196,6 +1197,20 @@ ul.tb.cl.mbw > li:nth-child(1) > a:before {
 
 
 /* endregion 附加选项、阅读权限、回帖奖励、抢楼主题、主题标签、定时发布 */
+
+/* region 原创声明 */
+.nciaer_original_div {
+    display: flex;
+    margin: 0;
+    padding: 12px 0 8px 16px;
+    border-color: var(--grey300);
+    background: var(--tab-bg);
+
+    webkit-box-shadow: 0 4px 3px -2px rgba(0, 0, 0, .2), 0 4px 4px 0 rgba(0, 0, 0, .14), 0 2px 8px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 4px 3px -2px rgba(0, 0, 0, .2), 0 4px 4px 0 rgba(0, 0, 0, .14), 0 2px 8px 0 rgba(0, 0, 0, .12);
+}
+
+/* endregion 原创声明 */
 
 .mtm.mbm.pnpost {
     margin-top: 20px !important;
