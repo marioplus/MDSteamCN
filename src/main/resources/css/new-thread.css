@@ -27,7 +27,7 @@
 
 /* endregion 隐藏 */
 
-/* region 发表帖子、发起投票、草稿箱*/
+/* region 发表帖子、发起投票、发布悬赏、发起辩论、发起活动、草稿箱*/
 .tb {
     display: flex;
     margin-top: 10px !important;
@@ -90,6 +90,27 @@ ul.tb.cl.mbw > li:nth-child(3) > a:before {
 }
 
 /* endregion 草稿箱 */
+
+/* region 发起投票 */
+ul.tb.cl.mbw > li:nth-child(4) > a:before {
+    -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAABKklEQVQ4T63UPSuGURzH8c+9sShvwUKU0aZsZDN4WExegM1CoShl8hqUPAwmxYRsRkUYvAXFgEX65xxd9+W6b5e6T53h+p/f+Z7/49XQodVowenGPEbTDtlV2rt4K9+rAg1jB2MtHrnAIm6K52XQKtZqRhu69awtgsZxWhOSZRM4i48M6sE1+gugeHEaQ8l2i6OSxw8YwUsGzeCg5M0STnCY7KGZxHZJNxuaDFrGRhJ84gOvWMBTsodnW+grgVawmUH7CHJxNSUzHRSL8Y6uFMlcO1DcfcQeLlNuIh/RY8UVKfkBFUPLor88yrqm0KqSXQSGR+ctWqMp2VXlrwP6Vf641K4hn9Fb4dGvhsyajoxIhnVkaDMsSjyFQQwk4z3ucFz3N/LPuf2WfwHcdUAT5ZRz+QAAAABJRU5ErkJggg==);
+}
+
+/* endregion 发起投票 */
+
+/* region 发起辩论 */
+ul.tb.cl.mbw > li:nth-child(5) > a:before {
+    -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAABC0lEQVQ4T82TPU7DQBSEZ8IdqOEmQayIK2wKrhDXCBpoEDUnIBU1TWwXKE7WIkdAoqNKzx0yaE0smWjtaFEKXrO/79PM233EnoJ74qAGRSYZCrrfBT3QIH2tpp++ezVoZJIXQJe7QIC+Slsc9oDiNwBDL0hYiXpuzua2eAgGCfiABnfk+rpL7Zq8Wiyy9401vyKJKaFbEEedtoVVWeXHvSCCJ4Kc7d4obc5/CopM/CjgZlt/sLXWp2zqsSRYP3NQjRolIxOL0GRmi7S1NwWQ9FQ7K21+8avXzk6T8bzKJttJroU26lwb1XNn240zmy1/1oERmfMngWP35O3UYJBL9in/E6iz1wLdea9/A+3ccxNxAgfHAAAAAElFTkSuQmCC);
+}
+
+/* endregion 发起辩论 */
+
+/* region 发起活动 */
+ul.tb.cl.mbw > li:nth-child(6) > a:before {
+    -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAABfElEQVQ4T62UO0sDQRDH/wPxiI21nYWinaWdkDTGLyGojbuBIKfpjbWPQwKZtfGBX0JtDNhZ2ilqbW1jOAMjG3bjvYQUt7DNzH9/s/PYJZS0qIgThuH0YDDYALDqtpU92l2tVm+iKPrOnsuBtNbLAM4A1P65bB/ALjM/J/0pkFLqgIg6k2QrIh1jzKHXjkFKqQYR3RZAjp2tnfWJyLox5s7aR6BWqzUzHA6fACxlxUEQzFpbHMefBUFeKpXKSrfb/RqBtNZbAC4KhPfM3HAaG3mtQLPNzJcexAAUgD4z1yepkdb6wTXEMLP2oDcA8w7wKiI7xhjbndxSStWI6BzAonO+M/NCEWjkF5G2MeYkSVJK7RORL753pUA+tfE5Iop6vd5eEtRsNk9FJMxcM5VartgiUs+m59KytUmuv2IXtP+HmQOl1CYRHdkxcaleaa1jAFOOlG6/NWYGsk9EHyKynYl+DWDOP5/cQHpxKU/Ew0p5tB5WyjcyyVQXaX4BiWuzExFg+OgAAAAASUVORK5CYII=);
+}
+
+/* endregion 发起活动 */
 
 /* region 草稿箱 */
 ul.tb.cl.mbw > li:nth-child(1) {
