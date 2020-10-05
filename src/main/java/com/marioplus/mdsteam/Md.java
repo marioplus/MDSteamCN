@@ -80,7 +80,7 @@ public class Md {
         List<List<Style>> list = tagList.stream().map(tag -> Arrays.asList(
                 Style.create(tag).addCode(
                         "background: unset;",
-                        "border-radius: 2px",
+                        "border-radius: 2px;",
                         "transition: all .2s ease-in-out;"
                 ),
                 Style.create(Md.addPseudoClass(tag, PseudoClass.HOVER)).addCode(

@@ -2,6 +2,10 @@
  * 帖子内容
  * post.css
  */
+:root {
+    --simple-cubic-bezier: cubic-bezier(0, 0, .2, 1);
+}
+
 /* region 主题色的背景条*/
 .floatcontainer.doc_header.wp.cl {
     height: 0;
@@ -518,6 +522,135 @@ img.authicn.vm {
 
 /* endregion*/
 
+/* region  特制标题*/
+/*一级标题*/
+h1.KyloStylisedHeader0 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    background: transparent;
+    color: var(--color500);
+    border-color: var(--color500);
+}
+
+h1.KyloStylisedHeader0:after {
+    display: flex;
+    content: '';
+    width: 50px;
+    height: 50px;
+    background: var(--color500);
+    -webkit-mask-size: 50px 50px;
+    -webkit-mask-position: right;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-image: url(https://keylol.com/static/image/common/kywing128_555_padded.png)
+}
+
+/*二级标题*/
+h2.KyloStylisedHeader1 {
+    background: var(--color500);
+    border-color: var(--color700);
+}
+
+/* endregion  */
+
+/* region 原创标识 */
+.original_text_style1 {
+    color: var(--color500);
+    border-color: var(--color700);
+    background: var(--grey200);
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.original_text_style1:before {
+    content: ' ';
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    background: var(--color500);
+    -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABNUlEQVQ4T62UMUtDMRRGT3f9Bd2chIIW3HSxc10tKLTgpouLYjs6qujiYjdBoYW6trMudhNUEDq5+Qva3XIlF9KQ3Jb3fBAe5H45uYScFPjnr2DwloA1NzZdbgh8ujGJrU0Bz4BjoJjY8Ae4Ba7Cegz44bpa5DCk23U/GAL7QDVCOndz+vcjA2BHJ3zgLtBLtKW530S9BjxJTYPLwDuwkhH4DZSBsQK3gWfj0OZ1KEsrwIsGT4DrnMBT4EaBHWAvJ7AL7CvwAagbwJKrfRmZR6ChwEPgbpGLZ2SOgLYCRa3XnMAtYKhA8XZkqHbgNrs3VFwFJv7FFn8vM97Dpnodqpfy+M8CQGwKvxmfY49DyudY8zMe++qFYenkwlBRVGupv/5i64EVvze8IevevDGOtWwBM92iKQTjNhVRPYL/AAAAAElFTkSuQmCC);
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+}
+
+/* endregion 原创标识 */
+
+/* region 目录 */
+#threadindex {
+    border-left: 5px solid var(--color500);
+}
+
+#threadindex > div.tindex {
+    padding: 0 0 0 18px;
+}
+
+#threadindex > div.tindex > h3 {
+    border: none;
+    margin: 0;
+    padding-left: 0;
+    padding-bottom: 8px;
+    color: var(--black2);
+}
+
+#threadindex > div.tindex > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#threadindex > div.tindex > ul > li {
+    display: flex !important;
+    flex-direction: row-reverse;
+    font-size: 18px;
+    padding: 4px 0;
+    color: var(--color500);
+    font-weight: bold;
+    background: unset;
+}
+
+#threadindex > div.tindex > ul > li:after {
+    content: '§';
+    font-weight: bold;
+    padding-right: 2px;
+}
+
+#threadindex > div.tindex > ul > li {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    text-decoration: none;
+    vertical-align: top;
+    outline: 0;
+}
+
+#threadindex > div.tindex > ul > li:before {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    content: ' ';
+    background-color: var(--color500);
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#threadindex > div.tindex > ul > li:focus:before,
+#threadindex > div.tindex > ul > li:hover:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+/* endregion 目录 */
+
 /* endregion*/
 
 /* region 底部广告*/
@@ -743,7 +876,7 @@ img.authicn.vm {
 /*位置*/
 .subforum_left_title_right_down a {
     position: relative;
-    top: 70px;
+    top: 68px;
     left: 157px;
 }
 
@@ -993,3 +1126,101 @@ img.authicn.vm {
 /* endregion*/
 
 /* endregion*/
+
+/* region 左侧个人资料 */
+
+/* region 关注按钮 */
+#follow_li {
+    --btn-follow-height: 30px;
+}
+
+#follow_li {
+    display: inline-flex;
+    align-items: center;
+    justify-content: start;
+    width: max-content !important;
+    min-width: var(--btn-follow-height);
+    height: var(--btn-follow-height);
+    background: transparent !important;
+    border-radius: 3px;
+    margin: 0;
+    padding-left: 4px;
+    padding-right: 8px;
+    text-indent: unset;
+    transition: all .2s var(--simple-cubic-bezier);
+}
+
+#follow_li:hover {
+    background: var(--grey300) !important;
+}
+
+#follow_li:active {
+    box-shadow: 0 3px 3px -2px rgba(0, 0, 0, .2), 0 3px 4px 0 rgba(0, 0, 0, .14), 0 1px 8px 0 rgba(0, 0, 0, .12);
+    -webkit-box-shadow: 0 3px 3px -2px rgba(0, 0, 0, .2), 0 3px 4px 0 rgba(0, 0, 0, .14), 0 1px 8px 0 rgba(0, 0, 0, .12);
+}
+
+#follow_li > #follow_a {
+    height: var(--btn-follow-height);
+    line-height: var(--btn-follow-height);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: start;
+}
+
+#follow_li > #follow_a:before {
+    content: '';
+    width: var(--btn-follow-height);
+    height: var(--btn-follow-height);
+    border-radius: 3px;
+    display: inline-flex;
+    position: relative;
+    background: center no-repeat;
+    transition: all .2s var(--simple-cubic-bezier);
+    border: 1px solid;
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+}
+
+#follow_li > #follow_a:after {
+    padding-left: 4px;
+    height: var(--btn-follow-height);
+    transition: all .2s var(--simple-cubic-bezier);
+}
+
+#follow_li:hover > #follow_a:after {
+    display: inline-flex;
+    width: max-content !important;
+}
+
+/*未关注*/
+#follow_li > #follow_a:before {
+    background: var(--light-blue500);
+    -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABC0lEQVQ4T63UMStGURgA4OdbZLRi8QMkxQ9QZmVhxEDYyN/4ykKhFCuTxUT8AcpgM1DCamTS0b06Hfd+zv18p+7wdt6e+5737ZyWHq9Wjz114AjCd13zwyk84QUfcU4KDmIfM0XSI86wUcQ7mMVwET9gDZclGoMDuMJ4RVW7+MRmTcWTuAl7MbgdVdK0tQdYTcHn6ChNwTeEdv1UOIa7pkqSP4Hb8sh9eEf/P9AhvMY9PMZCl+A9RtMeTuOiS3AdeykY4ja2GqIBCuD3qropJ5jLRE8x3+mmlHs56C+srsIctBL7Cwz7R1hMjn+I5bqW5DxfS8WwwquygvNO/c0BM+dTP+VGQJrc8wq/ABWMJxU4TfR9AAAAAElFTkSuQmCC)
+}
+
+#follow_li.fo_add > #follow_a {
+    color: var(--light-blue500);
+}
+
+/*已关注*/
+#follow_li.fo_cancel > #follow_a:before {
+    background: var(--green500);
+}
+
+#follow_li.fo_cancel > #follow_a:after {
+    color: var(--green500);
+}
+
+/*取消关注*/
+#follow_li.fo_cancel:hover > #follow_a:before {
+    background: var(--red500);
+    -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABIUlEQVQ4T63Uvy4FURDH8c+tPIFCwQv4V2hJVDoKidBLtAoSdHRC4gUkWkIQf0KIRKPV6LQajXcgk+wm567dvZubPckkm5OZ78zvzOx0tHw6NbwhTCX2jffESkOrgFvYr0n2gu0M3uVWBI7jHiMNXyKS7qS+ReBvQ1DqdoSN/CIFnmG5D2CEzOAtPnLgHJ4KsF1MYLHkfhZh+bnDQgrcxGEhMKq9xWMSHEn28FoA/mAwBZ5ipUTuWgZ9xlUGO8dSie8kPnLJXxiueL8YoRt8ogoWoas4aQo8wAAuMF+RuAtYJ/k4q+wBYZeY7iW5qikhMZW5nkGvMZZA/zWlamxGSxoQne45NpGs1cHOq2/11wto68shr7S19ZVOQ6sLts+lwx9+n0MVCNUSLwAAAABJRU5ErkJggg==)
+}
+
+#follow_li.fo_cancel:hover > #follow_a:after {
+    color: var(--red500) !important;
+}
+
+/* endregion 关注按钮 */
+
+/* endregion 左侧个人资料 */
