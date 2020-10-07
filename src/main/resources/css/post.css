@@ -554,6 +554,29 @@ h2.KyloStylisedHeader1 {
     border-color: var(--color700);
 }
 
+/*三级标题*/
+h3.KyloStylisedHeader2 {
+    background: transparent;
+    color: var(--color500);
+}
+
+h3.KyloStylisedHeader2:after {
+    display: flex;
+    content: ' ';
+    background: var(--color500);
+    width: calc(100% + 3px * 2);
+    height: 8px;
+    position: relative;
+    top: -7px;
+    left: -3px;
+}
+
+/*四级标题*/
+h4.KyloStylisedHeader3 {
+    color: var(--color500);
+    border-color: var(--color500);
+}
+
 /* endregion  */
 
 /* region 原创标识 */
