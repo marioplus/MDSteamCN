@@ -2,6 +2,11 @@
  * 帖子内容
  * post.css
  */
+:root {
+    --post-title-text: var(--color500);
+    --post-breadcrumb-text: var(--color500);
+}
+
 /* region 帖子 */
 
 .subforum_left_title_left_down a:nth-child(1) {

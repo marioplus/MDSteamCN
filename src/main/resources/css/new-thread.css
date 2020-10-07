@@ -83,6 +83,18 @@ body {
 #postsubmit {
     color: var(--bg-dark2) !important;
 }
-.edt .btn{
+
+.edt .btn {
     border: unset;
+}
+
+.nciaer_original_div,
+.nciaer_original_div input[type=text] {
+    background: var(--bg-dark1);
+    color: var(--black2);
+}
+
+#post_extra {
+    background: var(--bg-dark1);
+    color: var(--black2);
 }

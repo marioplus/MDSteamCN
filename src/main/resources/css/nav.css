@@ -7,6 +7,10 @@
     --nav-bg: var(--bg-dark2);
 }
 
+#nav-logo {
+    background: var(--color500);
+}
+
 /* endregion 导航栏 */
 
 /* 全局 */
