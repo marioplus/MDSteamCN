@@ -3,20 +3,8 @@
  * nav.css
  */
 /* region 导航栏 */
-#nav-menu ul li ul li a {
-    color: var(--t-dark);
-}
-
-.dropdown-menu > li > a {
-    color: var(--t-dark);
-}
-
-#nav-user-action-bar .divider {
-    background: var(--bg-dark1) !important;
-}
-
-.dropdown-menu > li > a:hover {
-    color: var(--t-dark);
+:root {
+    --nav-bg: var(--bg-dark2);
 }
 
 /* endregion 导航栏 */

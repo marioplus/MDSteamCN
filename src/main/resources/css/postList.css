@@ -2,6 +2,11 @@
  * 板块（帖子列表）
  * postList.css
  */
+:root {
+    --postList-title-text: var(--color500);
+    --postList-breadcrumb-text: var(--color500);
+}
+
 /* region 板块 */
 
 .subforum_left_title_left_down {

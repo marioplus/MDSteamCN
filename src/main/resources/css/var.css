@@ -2,6 +2,10 @@
  * 变量配置
  */
 :root {
+    --md-btn-text: var(--color500);
+    --md-btn-text-hover: var(--color500);
+    --md-btn-text-acrive: var(--color500);
+
     --dark-accent: var(--color600);
 
     --bg-dark2: #151515;
@@ -11,5 +15,5 @@
 
     --t-dark: #d6d6d6;
 
-    --color500: var(--bg-dark2);
+    --md-block-bg: var(--bg-dark2);
 }
