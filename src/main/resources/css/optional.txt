@@ -19,4 +19,11 @@
 
     --color-accent: var(--color500);
     --md-block-bg: var(--color500);
+
+    --md-btn-light-text: var(--white1);
+    --md-btn-light-text-hover: var(--white1);
+    --md-btn-light-text-acrive: var(--white1);
+    --md-btn-dark-text: var(--black1);
+    --md-btn-dark-text-hover: var(--black1);
+    --md-btn-dark-text-acrive: var(--black1);
 }

@@ -2,6 +2,12 @@
  * 板块（帖子列表）
  * postList.css
  */
+
+:root {
+    --postList-title-text: var(--white1);
+    --postList-breadcrumb-text: var(--white1);
+}
+
 /* region 隐藏顶部的关注重点、站定公告、小广告*/
 .floatcontainer.doc_header.wp.cl {
     display: none;
@@ -17,7 +23,7 @@ body:before {
     width: 100%;
     min-width: 1200px;
     height: 500px;
-    background: var(--color500);
+    background: var(--md-block-bg);
     position: absolute;
     z-index: -1;
     top: 0;
@@ -60,7 +66,7 @@ body:before {
     position: relative;
 }
 
-.subforum_left_title_left_up em:after {
+.subforum_left_title_left_up em:not(:last-child):after {
     content: ">";
     top: 3px;
     position: relative;
@@ -69,7 +75,7 @@ body:before {
 
 .subforum_left_title_left_up em:after,
 .subforum_left_title_left_up a {
-    color: var(--white1);
+    color: var(--postList-breadcrumb-text);
     font-size: 12px;
 }
 
@@ -90,7 +96,7 @@ body:before {
     width: 100%;
     height: 2px;
     content: ' ';
-    background-color: var(--white1);
+    background-color: var(--postList-breadcrumb-text);
     -webkit-transition: all .2s;
     transition: all .2s;
     -webkit-transform: scaleX(0);
@@ -132,10 +138,8 @@ body:before {
 .subforum {
     height: unset !important;
     min-width: unset !important;
-    padding: 16px 16px 0 16px;
-    margin: unset !important;
-    width: calc(1000px - 16px * 2);
-
+    margin: 0 !important;
+    width: calc(1000px);
 }
 
 .subforum_left_title_left,
@@ -172,7 +176,7 @@ body:before {
     font-size: 50px;
     font-weight: bold;
     text-transform: uppercase;
-    color: var(--white1);
+    color: var(--postList-title-text);
     text-align: center;
 }
 
@@ -202,9 +206,10 @@ body:before {
     display: inline-block;
     text-decoration: none;
     padding: 6px 8px;
+    margin-right: 8px;
     position: relative;
     border-radius: 2px;
-    color: var(--white1);
+    color: var(--md-btn-light-text);
 }
 
 .subforum_left_title_right_up a {
@@ -266,9 +271,6 @@ a#a_favorite:before {
 
     position: relative;
     top: -31px;
-    /*left: 740px;*/
-
-    background: var(--red500);
 }
 
 .subforum_right_title > div div:nth-child(odd) {
@@ -278,7 +280,7 @@ a#a_favorite:before {
 .subforum_right_title > div div:nth-child(even) {
     display: inline-block;
     width: unset;
-    color: var(--white1);
+    color: var(--md-btn-light-text);
     font-size: 12px;
     margin-top: unset;
     padding: 5px 10px 11px 10px;
