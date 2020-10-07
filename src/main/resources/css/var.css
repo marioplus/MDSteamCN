@@ -18,4 +18,5 @@
     --colorA700: var(--tealA700);
 
     --color-accent: var(--color500);
+    --md-block-bg: var(--color500);
 }
