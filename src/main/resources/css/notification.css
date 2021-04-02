@@ -170,7 +170,7 @@
     font-size: 16px;
     height: 48px;
     line-height: 48px;
-    padding-left: 48px;
+    padding-left: 48px !important;
 }
 
 .notice_pm, .notice_all, .notice_mypost, .notice_interactive, .notice_system, .notice_manage, .notice_app {
@@ -186,6 +186,7 @@
     -webkit-mask-repeat: no-repeat;
     position: absolute;
     top: 1px;
+    left: 20px;
     /*     border-radius: 50%; */
 }
 #ct > .appl > .tbn > ul > li.a > a:before {
