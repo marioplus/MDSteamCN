@@ -676,6 +676,30 @@ h4.KyloStylisedHeader3 {
 
 /* endregion 目录 */
 
+/* region 标签 */
+div#keyloL_thread_tags.ptg.mbm.mtn::before{
+    color: var(--color500);
+}
+
+div#keyloL_thread_tags > a {
+    background: var(--color500);
+    text-decoration: none !important;
+    white-space: nowrap;
+    border-radius: 16px;
+    padding: 4px 10px;
+    -webkit-transition: -webkit-box-shadow .25s cubic-bezier(.4, 0, .2, 1);
+    transition: -webkit-box-shadow .25s cubic-bezier(.4, 0, .2, 1);
+    will-change: box-shadow;
+}
+
+div#keyloL_thread_tags > a:focus,
+div#keyloL_thread_tags > a:hover {
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+/* endregion 标签 */
+
+
 /* endregion*/
 
 /* region 底部广告*/

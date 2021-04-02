@@ -59,7 +59,7 @@ configs:
     matches:
       - mode: regexp
         params:
-          - ".+keylol.com/f[0-9]{3}.+"
+          - ".+keylol.com/f[0-9][0-9][0-9].+"
           - ".+keylol.com.+forumdisplay.+fid=[0-9]+.+"
   - note: 导读
     file-name: guide.css
