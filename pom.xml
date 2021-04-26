@@ -15,7 +15,7 @@
         <commons-collections4.version>4.4</commons-collections4.version>
         <lombok.version>1.18.12</lombok.version>
         <jackson.version>2.10.1</jackson.version>
-        <ommons-io.version>2.6</ommons-io.version>
+        <ommons-io.version>2.7</ommons-io.version>
     </properties>
 
     <dependencies>
