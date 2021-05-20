@@ -30,6 +30,15 @@
 
 ## 更新
 
+**2021-05-21**
+1. 适配首页的steam监控和特卖预告
+2. 修复首页结构发生变化带来的错位
+
+**2021-04-03**
+1. update：适配帖子下面的标签
+2. update: 适配高级编辑器倒计时图标
+3. fix: 修复通知页面左侧菜单图标乱位
+
 **2020-10-07**
 1. fix: 帖子、板块页顶部按钮统一间隙
 2. fix: 高级编辑器页面帖子类型按钮原先只适配了2种，现在全部适配
@@ -106,15 +115,23 @@
 
 ## 安装
 
-### 1. 安装Stylus插件
+### 1. 安装xStyle插件
 
-- [chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?utm_source=chrome-ntp-icon)
-- [firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
-- [opera](https://addons.opera.com/en-gb/extensions/details/stylus/)
+- [chrome](https://chrome.google.com/webstore/detail/xstyle/hncgkmhphmncjohllpoleelnibpmccpj)
+- [firefox](https://addons.mozilla.org/zh-CN/firefox/addon/xstyle/)
 
 ### 2. 安装我的[MDSteamCN](https://userstyles.org/styles/172244/mdsteamcn)样式
 
 进入页面点**Install Style**就可以了,在安装之前可以选择 **Customize Settings**自定义主题色。
+
+### 3. 变更主题色
+后续想改变主题色可直接XStyle在设置（管理样式 -> 高级选项 -> 选择主题色 -> 保存）
+
+![image.png](https://i.loli.net/2021/05/21/WR6dwOagH8kTXIV.png)
+
+![image.png](https://i.loli.net/2021/05/21/Xn1WqC5hDeAb7IU.png)
+
+![image.png](https://i.loli.net/2021/05/21/j3nvX6gYuJFiqWM.png)
 
 ## 接锅
 

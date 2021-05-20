@@ -4,8 +4,9 @@ import com.marioplus.mdsteam.enums.PseudoClass;
 import com.marioplus.mdsteam.enums.Shadow;
 import lombok.ToString;
 
-import javax.crypto.interfaces.PBEKey;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.stream.Collectors;
 
 /**
@@ -127,7 +128,7 @@ public class Md {
     /**
      * 下划线
      */
-    public static String typeA(List<String> tagList) {
+    public static String typeA(List<String> tagList, int height, String color) {
 
         List<List<Style>> list = tagList.stream().map(tag -> Arrays.asList(
                 Style.create(tag).addCode(
@@ -144,9 +145,9 @@ public class Md {
                         "bottom: 0;",
                         "left: 0;",
                         "width: 100%;",
-                        "height: ${height}px;",
+                        String.format("height: %dpx;", height),
                         "content: ' ';",
-                        "background-color: $color;",
+                        String.format("background-color: %s;", color),
                         "-webkit-transition: all .2s;",
                         "transition: all .2s;",
                         "-webkit-transform: scaleX(0);",
