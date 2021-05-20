@@ -14,8 +14,8 @@
         <commons-lang3.version>3.9</commons-lang3.version>
         <commons-collections4.version>4.4</commons-collections4.version>
         <lombok.version>1.18.12</lombok.version>
-        <jackson.version>2.10.1</jackson.version>
-        <ommons-io.version>2.6</ommons-io.version>
+        <jackson.version>2.12.3</jackson.version>
+        <commons-io.version>2.8.0</commons-io.version>
     </properties>
 
     <dependencies>
@@ -54,7 +54,7 @@
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
-            <version>${ommons-io.version}</version>
+            <version>${commons-io.version}</version>
         </dependency>
 
     </dependencies>
